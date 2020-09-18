@@ -1,49 +1,33 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>A practice page to help me learn</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brooke Barlow WDD230 course portal home page</title>
   <meta name="description" content="less than 150 characters">
-  <link href="css/main.css" rel="stylesheet" </head>
+  <link href="css/main.css" rel="stylesheet">
+</head>
 
 <body>
-  <header>
-    <h1>Brooke Barlow</h1>
+  <header class="home">
+    <h1 class="name">Brooke Barlow</h1>
   </header>
-  <nav>
+  <main>
+    <img width="200" class="portrait" src="images/brooke-timp2020.jpg" alt="Brooke Barlow hiking Mount Timpanogoes">
+    <h2>CIT 230: Assignment Portal</h2>
+  </main>
+  <nav class="home">
     <ul>
-      <li>Home </li>
-      <li>Products</li>
-      <li>Services</li>
-      <li>Events</li>
-      <li>Contact Us</li>
-
+      <li> Lesson 02 : <a href="#">Assignment link</a></li>
+      <li> Lesson 03 : <a href="#">Assignment link</a></li>
+      <li> Lesson 04 : <a href="#">Link</a> | <a href="#">Link</a></li>
     </ul>
   </nav>
-  <main>
-    <section>
-      <h2>San Diego</h2>
-      <p><img src="images/brooke copy.jpg" alt="A picture of Brooke near the ocean on a cliff smiling">Lorem ipsum dolor
-        sit amet, consectetur adipiscing elit.
-        In tempor imperdiet mauris sed mollis. Etiam ligula ligula,
-        suscipit ut tellus sit amet, maximus aliquet risus.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Aenean suscipit bibendum quam ut congue.
-        Proin eu lectus quis arcu vestibulum luctus ac ut est.
-        Suspendisse id fermentum tortor. Suspendisse lobortis risus lacinia,
-        rhoncus magna convallis, malesuada urna. Etiam id elit quis nisl cursus
-        venenatis vel ac metus. Suspendisse dignissim vel ligula in facilisis.
-        Morbi turpis lacus, posuere ac ante id, suscipit ornare sem.
-        In pharetra rhoncus leo, sed sodales mauris sollicitudin quis.
-        Etiam at sem vel sem viverra sagittis.</p>
-    </section>
-  </main>
-  <footer>
-    &copy; 2020 - Brooke Barlow | Today's date: <span id="current-date"></span> 
+  <footer class="home">
+    <p>&copy;2020 | Brooke Barlow | Utah | <a href="#">BYUI Online Learning</a><p>
+    <p><small>Last Updated:<span id="last-updated"></span> </small></p>
   </footer>
-  <script src=" js/currentdate.js"></script>
+  <script src="js/last.Modified.js"></script>
 </body>
-
 </html>
