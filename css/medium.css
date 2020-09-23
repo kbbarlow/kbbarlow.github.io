@@ -9,6 +9,7 @@ h2{
     position: absolute;
     right: 0;
     top: -140px;
+    box-shadow: 0 0 30px #333; 
   }
   header, footer {
     border-radius: 15px;
