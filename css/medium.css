@@ -1,1 +1,6 @@
 @media (min-width:32em)
+main img {
+  position: absolute;
+  right: 0;
+  top: -140px;
+}

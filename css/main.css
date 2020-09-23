@@ -25,9 +25,7 @@ main img {
   max-width: 300px;
   margin : 10px;
   box-shadow: 0 0 30px #333; 
-  position: absolute;
-  right: 0;
-  top: -140px;
+  
 }
 .name {
   font-family: 'Playfair Display', serif; 
