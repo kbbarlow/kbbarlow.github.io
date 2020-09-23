@@ -10,4 +10,8 @@ h2{
     right: 0;
     top: -140px;
   }
+  header, footer {
+    border-radius: 15px;
+    
+  }
 }
