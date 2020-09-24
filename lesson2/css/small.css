@@ -8,7 +8,7 @@ main, footer{
   font-family: 'Roboto', sans-serif;
 }
 header, footer {
-background-color: #008080;
+background-color: #9DBDC6;
 color: white;
 text-align: center;
 }
@@ -34,14 +34,25 @@ main {
 	grid-template-columns: 1fr;
 }
 section h2{
-  background-color: navy;
+  background-color:#272F32;
   color: white;
+  margin: 0;
 }
 section {
-  background-color: gray;
+  background-color:#DAEAEF;
   
 }
 section img{
   width: 100%;
-  
+}
+section a{
+  color: #FF3D2E;
+}
+section h2, section h3, section a{
+  padding: 10px;
+}
+header {
+  margin-bottom: 10px;
+}
+footer { margin-top: 50px;
 }
