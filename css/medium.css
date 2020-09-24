@@ -8,7 +8,7 @@ h2{
   header img {
     float: right;
     box-shadow: 0 0 30px #333; 
-    margin:0 10px;
+    margin:5px 15px;
   }
   header, footer {
     border-radius: 15px;
