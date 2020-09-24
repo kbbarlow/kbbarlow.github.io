@@ -5,11 +5,10 @@ h1{
 h2{
   font-size: 2rem;
 }
-  main img {
-    position: absolute;
-    right: 0;
-    top: -140px;
+  header img {
+    float: right;
     box-shadow: 0 0 30px #333; 
+    margin:0 10px;
   }
   header, footer {
     border-radius: 15px;
