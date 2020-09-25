@@ -2,13 +2,12 @@
 body {
   font-size: 16px;
   line-height:1.5;
-  max-width: 767px;
 }
 main, footer{ 
   font-family: 'Roboto', sans-serif;
 }
 header, footer {
-background-color: #9DBDC6;
+background-color:#011C26;
 color: white;
 text-align: center;
 }
@@ -25,6 +24,7 @@ margin:0 20px;
 h3{
   font-size: .9rem;
   margin:5px 0;
+  color: #272F32;
 }
 p {
 margin: 5px;
@@ -39,22 +39,22 @@ main {
 	grid-template-columns: 1fr;
 }
 section h2{
-  background-color:#272F32;
+  background-color:#1D6373;
   color: white;
   margin: 0 -5px;
 }
 section {
-  background-color:#DAEAEF;
+  background-color:#7AB8BF;
   margin:0 0 20px;
   padding: 0 5px 10px;
-  border: 1px solid #272F32;
+  border: 1px solid #4494A6;
 }
 section img{
   width: 100%;
   border: 1px solid #272F32;
 }
 section a{
-  color: #FF3D2E;
+  color:#272F32;
   margin-bottom: 10px;
 }
 section h2 {
@@ -64,4 +64,7 @@ header {
   margin-bottom: 10px;
 }
 footer { margin-top: 50px;
+}
+section p{
+  color:#272F32;
 }
