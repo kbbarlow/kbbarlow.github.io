@@ -3,6 +3,7 @@
 body {
   font-size: 16px;
   line-height: 1.5;
+
 }
 
 main,
@@ -47,12 +48,14 @@ main {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
+  padding: 10px;
 }
 
 section h2 {
   background-color: #1D6373;
   color: white;
   margin: 0 -5px;
+  border-radius: 9px 9px 0 0;
 }
 
 section {
@@ -60,6 +63,7 @@ section {
   margin: 0 0 20px;
   padding: 0 5px 10px;
   border: 1px solid #4494A6;
+  border-radius: 10px;
 }
 
 section img {
@@ -82,8 +86,11 @@ header {
 
 footer {
   margin-top: 50px;
+  padding: 20px;
 }
-
+footer p:last-child {
+margin-bottom: 0;
+}
 section p {
   color: #272F32;
 }
