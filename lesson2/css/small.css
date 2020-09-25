@@ -3,7 +3,7 @@
 body {
   font-size: 16px;
   line-height: 1.5;
-
+  color:#011C26;
 }
 
 main,
@@ -90,7 +90,4 @@ footer {
 }
 footer p:last-child {
 margin-bottom: 0;
-}
-section p {
-  color: #272F32;
 }
