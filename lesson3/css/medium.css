@@ -3,7 +3,10 @@
     max-width: 800px;
     margin: 0 auto;
   }
-  main {
-    
+  nav ul {
+    display: flex;}
+    nav ul li {
+      flex: 1 1 100%;
+    }
   }
-}
+ 

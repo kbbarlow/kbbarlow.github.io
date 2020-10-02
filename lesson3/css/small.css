@@ -3,7 +3,7 @@
 body {
   font-size: 16px;
   line-height: 1.5;
-  color:#011C26;
+  color: #011C26;
 }
 
 main,
@@ -17,6 +17,33 @@ footer {
   color: white;
   text-align: center;
 }
+
+nav {
+  background-color: #4494A6;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: .75rem;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  background-color: #1D6373;
+  color: #fff;
+}
+
 
 h1 {
   font-family: 'Playfair Display', serif;
@@ -44,7 +71,7 @@ footer a {
 }
 
 main {
-  max-width: 767px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 10px;
 }
@@ -79,13 +106,14 @@ section h2 {
 }
 
 header {
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 footer {
   margin-top: 50px;
   padding: 20px;
 }
+
 footer p:last-child {
-margin-bottom: 0;
+  margin-bottom: 0;
 }
