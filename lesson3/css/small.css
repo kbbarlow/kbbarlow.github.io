@@ -89,9 +89,18 @@ footer p:last-child {
   margin-bottom: 0;
 }
 .abril {
-Font-Family: 'Abril Fatface', Cursive;
-Font-Size: 48px;}
+font-family: 'Abril Fatface', Cursive;
+font-size: 48px;}
 .poppins {
-Font-Family: 'Poppins', Sans-Serif;
-Font-Size: 16px;
+font-family: 'Poppins', Sans-Serif;
+font-size: 16px;
+}
+td {
+border: 2px solid #272F32;
+text-align: center;
+padding: 10;
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
 }
