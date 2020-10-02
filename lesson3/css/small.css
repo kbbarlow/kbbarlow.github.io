@@ -88,3 +88,10 @@ footer {
 footer p:last-child {
   margin-bottom: 0;
 }
+.abril {
+Font-Family: 'Abril Fatface', Cursive;
+Font-Size: 48px;}
+.poppins {
+Font-Family: 'Poppins', Sans-Serif;
+Font-Size: 16px;
+}
