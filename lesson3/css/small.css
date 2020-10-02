@@ -53,17 +53,17 @@ h1 {
 
 h2 {
   font-size: 1.25rem;
-  
 }
 
 h3 {
   font-size: .9rem;
-  margin: 5px 0;
+  margin: 10px;
   color: #272F32;
 }
 
 p {
-  margin: 5px 0;
+  margin: 5px;
+  
 }
 
 footer a {
@@ -103,4 +103,7 @@ padding: 10;
 table{
   width: 100%;
   border-collapse: collapse;
+}
+main img{
+  margin-top: 20px;
 }
