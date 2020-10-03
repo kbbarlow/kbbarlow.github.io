@@ -114,5 +114,5 @@ main img{
 }
 .grid-container img{
 width: 100%;
-
+align-self: center;
 }
