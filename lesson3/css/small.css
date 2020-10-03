@@ -117,3 +117,12 @@ main img{
 
 align-self: center;
 }
+.back{
+  text-align: left;
+  padding: 5px;
+  padding-left: 15px;
+}
+.back a{
+  color: #fff;
+  text-decoration: none;
+}
