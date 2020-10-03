@@ -8,5 +8,18 @@
     nav ul li {
       flex: 1 1 100%;
     }
-  }
- 
+    .grid-container {
+      display: grid;
+      font-size: 1rem;
+      justify-items: stretch;
+    }
+    .two-up {
+      grid-template-columns: 1fr 1fr;
+    }
+    .three-up {
+      grid-template-columns: 33% 33% 33%;
+    }
+    .persona1 p{
+      grid-column-start: 2;
+    }
+    }
