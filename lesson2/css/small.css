@@ -92,3 +92,13 @@ footer {
 footer p:last-child {
 margin-bottom: 0;
 }
+.back{
+  text-align: left;
+  padding: 5px;
+  padding-left: 15px;
+  background-color: #1D6373;
+}
+.back a{
+  color: #fff;
+  text-decoration: none;
+}
