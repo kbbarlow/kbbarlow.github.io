@@ -111,8 +111,9 @@ table{
 }
 main img{
   margin-top: 20px;
+  width: 100%;
 }
 .grid-container img{
-width: 100%;
+
 align-self: center;
 }
