@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Box model, values, & Units</title>
+  <meta name="description" content="CSS BOX Model presentation">
+  <link rel="stylesheet" href="css/boxmodel.css">
+</head>
+
+<body>
+  <h1>CSS Box Model</h1>
+  <p class="box1">
+    In the box model, there are 3 different parts. They are padding, border, and margin.</p>
+  <p class="box2">Padding occurs inside of the background of the element. Padding is used to make space from itself</p>
+ 
+  <p class="box3">Borders are the line of the box</p>
+  
+  <p class="box4"> Margin is the space around the outside of the box. In general, margin is used to put space between
+    two elements.</p>
+<input type="number" id="" placeholder="input"><br>
+  <button>Display</button>
+  <div class="wrapper">
+    <p class="px">This box is 200px wide x 200px high, px are an absoulte value. This value wont change not matter what else
+        changes</p>
+    <p class="vw">This box is 20vw wide x 20vh high, 20 vw and vh is 20% of the viewport. This value is relative to the viewport
+      </p>
+    <p class="em">This box is 20em wide x 20em high. em is relative to the parent's font size. The .wrapper parent is set to 1em.
+        You have to pay careful attention to the parents size when using em.
+      </p>
+    <p class="rem">This box is 20rem wide x 20rem high. rem stands for root em. rem is relative to the root font size. Default
+        font size is 16px. Notice the em box and rem box are the same. On this page 1em = 16px</p>
+  </div>
+  <div class="px">This box is 200px wide</div>
+  <div class="percent">This box is 50% wide</div>
+  <div class="wrapper2">
+  <div class="px">This box is 200px wide</div>
+  <div class="percent">This box is 50% wide</div>
+  </div>
+
+</body>
+
+</html>
