@@ -83,7 +83,6 @@ grid-row: 1fr 1fr 1fr;
 }
 .logo {
   width: 5rem;
-  grid-row: 1 / 2;
 
 }
 .motto {
