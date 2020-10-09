@@ -74,6 +74,19 @@ h1 {
     background-color: #77bdd9;
     color: #024059;
 }
-div{
+div {
   display: block;
+}
+header {
+display: flex;
+flex-flow: row wrap ;
+justify-content: center;
+
+
+
+}
+.logo {
+  width: 5rem;
+  margin-right: 1rem;
+
 }
