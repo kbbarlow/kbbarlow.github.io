@@ -54,7 +54,7 @@ nav ul.hide{ display: none;}
   color: #fff;
   text-decoration: none;
 }
-main, footer{ 
+main, footer, .motto { 
 font-family: 'Poppins', sans-serif;
 }
 body {
@@ -70,6 +70,10 @@ h1 {
     margin: 10px;
     width: 100%;
     height: auto;
-    border: 1px dashed #024059;
+    border: 1px solid #024059;
     background-color: #77bdd9;
+    color: #024059;
+}
+div{
+  display: block;
 }
