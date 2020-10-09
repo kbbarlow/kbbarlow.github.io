@@ -64,6 +64,7 @@ body {
 h1 {
   font-family: 'Abril Fatface', cursive;
   font-size: 2rem;
+  margin-bottom: 0;
 }
 .placeholder {
     padding: 1rem;
@@ -74,19 +75,21 @@ h1 {
     background-color: #77bdd9;
     color: #024059;
 }
-div {
-  display: block;
-}
+
 header {
-display: flex;
-flex-flow: row wrap ;
-justify-content: center;
+display: grid;
+grid-template-columns: 1fr;
+grid-row: 1fr 1fr 1fr;
 
 
 
 }
 .logo {
   width: 5rem;
-  margin-right: 1rem;
+  grid-row: 1 / 2;
 
+}
+.motto {
+  margin-bottom: 1rem;
+  
 }
