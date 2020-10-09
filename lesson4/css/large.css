@@ -8,13 +8,20 @@
     float: left;
   }
   nav ul li a {
-    border: none;
-    border-right: 1px solid rgba(0, 0, 0, 0.3);
     padding: .6rem 2rem;
+    
   }
   .logo {
     width: 10rem;
     margin-bottom: 0;
-  
+  }
+  header {
+    display: block;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  h1{
+    grid-column: 2 / 4;
+    grid-row: 1 / 2 ;
   }
 }
