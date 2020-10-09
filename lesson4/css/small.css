@@ -12,6 +12,9 @@ nav, footer{
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01260e', endColorstr='#025918',GradientType=0 ); /* IE6-9 */
   
     }
+nav {
+  font-family: 'Poppins', sans-serif;
+}
 
 nav button{
   margin: .2rem 2%;
@@ -25,7 +28,7 @@ footer  {
   color: #fff;
 }
 nav ul{
-  list-style: none;
+  list-style-type: none;
   padding: 0;
   margin: 0;
 }
@@ -40,11 +43,7 @@ nav ul li a{
 nav ul li.active a{ background-color: rgba(0, 0, 0, 0.2); color: #fff;}
 nav ul li a:hover{ background-color: rgba(0, 0, 0, 0.4);}
 nav ul.hide{ display: none;}
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
 .back{
   text-align: left;
   padding: 5px;
@@ -89,4 +88,8 @@ grid-row: 1fr 1fr 1fr;
   margin-bottom: 1rem;
   
 }
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
