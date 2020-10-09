@@ -65,3 +65,11 @@ h1 {
   font-family: 'Abril Fatface', cursive;
   font-size: 2rem;
 }
+.placeholder {
+    padding: 1rem;
+    margin: 10px;
+    width: 100%;
+    height: auto;
+    border: 1px dashed #024059;
+    background-color: #77bdd9;
+}
