@@ -21,13 +21,7 @@
     width: 10rem;
     margin-bottom: 0;
   }
-  header {
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    grid-template-rows: 1fr;
-    max-width: 550px;
-    margin: 0 auto;
-  }
+ 
   .logo {
     grid-column: 1;
     grid-row: 1;

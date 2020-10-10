@@ -2,6 +2,7 @@ footer  {
   background-color: #01260E;
   font-family: 'Poppins', sans-serif;
   color: #fff;
+  
 }
 nav, footer{
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#01260e+0,025918+100 */
@@ -76,20 +77,31 @@ h1 {
 }
 
 header {
+background-color: #fff;
+padding: 5px 0;
 display: flex;
 align-items: center;
-align-content: center;
+justify-content: center;
 }
 .logo {
-  width: 5rem;
-
+  width: 80px;
+  height: auto;
+  margin-right: 10px;
 }
-.motto {
-  margin-bottom: 1rem;
-  
+.headings {
+  display: flex;
+  flex-direction: column;
 }
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
+}
+.motto {
+  font-style: italic;
+  color: #01260E;
+  margin-left:30px;
+}
+main, footer{
+  max-width: 960px;
 }
