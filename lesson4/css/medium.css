@@ -1,2 +1,38 @@
 /*35em is also 560px when basefont is 16px */
-@media only screen and (min-width: 35em) {}
+@media only screen and (min-width: 35em) {
+
+  .primaryNav {
+    display: flex;
+  }
+
+  .primaryNav li {
+    display: flex;
+  }
+
+  .primaryNav a {
+    text-align: center;
+    justify-content: center;
+
+  }
+
+  .primaryNav li:first-child {
+    display: none;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2,{
+    font-size: 2rem;
+  }
+
+  main,
+  footer, {
+    font-size: 1rem;
+  }
+
+  .motto {
+    font-size: 1.5rem;
+  }
+}

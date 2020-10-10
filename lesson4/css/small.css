@@ -1,119 +1,160 @@
-footer  {
-  background-color: #01260E;
-  font-family: 'Poppins', sans-serif;
-  color: #fff;
-  
+
+nav,
+footer {
+  background: #77bdd9;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #77bdd9 0%, #51abcc 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #77bdd9 0%, #51abcc 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #77bdd9 0%, #51abcc 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#77bdd9', endColorstr='#51abcc', GradientType=0);
+  /* IE6-9 */
 }
-nav, footer{
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#01260e+0,025918+100 */
-  background: #01260e; /* Old browsers */
-  background: -moz-linear-gradient(top,  #01260e 0%, #025918 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  #01260e 0%,#025918 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  #01260e 0%,#025918 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01260e', endColorstr='#025918',GradientType=0 ); /* IE6-9 */
-  
-    }
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #011C26;
+}
 nav {
   font-family: 'Poppins', sans-serif;
+
 }
 
-nav button{
+nav button {
   margin: .2rem 2%;
   background-color: transparent;
   border: none;
   font-size: 1.6rem;
   color: #fff;
 }
-footer  {
-  background-color: #01260E;
-  color: #fff;
-  text-align: center;
 
-}
-nav ul{
+nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  overflow: hidden;
 }
-nav ul li a{
+
+nav ul li a {
   display: block;
   padding: .8rem 2%;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.8);
-  border-top:1px solid rgba(0, 0, 0, 0.3)
+  color: #011C26;
+  border-top: 1px solid rgba(2, 64, 89, 0.4);
+  text-align: center;
+  font-size: 1rem;
+  transition: background-color .3s;
+  font-weight: bold;
 }
 
-nav ul li.active a{ background-color: rgba(0, 0, 0, 0.2); color: #fff;}
-nav ul li a:hover{ background-color: rgba(0, 0, 0, 0.4);}
-nav ul.hide{ display: none;}
-
-.back{
-  text-align: left;
-  padding: 5px;
-  padding-left: 15px;
-}
-.back a{
+nav ul li.active a {
+  background-color: rgba(2, 64, 89, 0.2);
   color: #fff;
-  text-decoration: none;
 }
-main, footer, .motto { 
-font-family: 'Poppins', sans-serif;
+
+nav ul li a:hover {
+  background-color: rgba(2, 64, 89, 0.4);
+  color: #fff;
 }
-body {
-  font-size: 16px;
-  line-height:1.5;
+
+nav ul.hide {
+  display: none;
+}
+
+header,
+footer {
+  background-color: #024059;
+  color: white;
+  text-align: center;
+}
+header {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+main,
+footer,
+.motto {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+}
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  
 }
 h1 {
   font-family: 'Abril Fatface', cursive;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 0;
 }
-.placeholder {
-    padding: 1rem;
-    margin: 10px;
-    width: 100%;
-    height: auto;
-    border: 1px solid #024059;
-    background-color: #77bdd9;
-    color: #024059;
+h2{
+  font-size: 1rem;
 }
 
-header {
-background-color: #fff;
-padding: 5px 0;
-display: flex;
-align-items: center;
-justify-content: center;
-}
-.logo {
-  width: 80px;
-  height: auto;
-  margin-right: 10px;
-}
-.headings {
-  display: flex;
-  flex-direction: column;
-}
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.motto {
-  font-style: italic;
-  color: #01260E;
-  margin-left:30px;
-}
-main, footer{
-  max-width: 960px;
-}
+
 footer p:first-child {
   padding-top: 10px;
   padding-bottom: 0;
   margin: 0;
 }
+
 footer p:last-child {
   padding-bottom: 10px;
   padding-top: 0;
   margin: 0;
+}
+
+footer {
+  color: #011C26;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.placeholder {
+  display: block;
+  padding: 1rem;
+  margin: 10px auto;
+  border: 1px dashed #011C26;
+  background-color: #CEE3EB;
+  color: #011C26;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.headings {
+  display: flex;
+  flex-direction: column;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.motto {
+  font-style: italic;
+  color: #fff;
+  margin-left: 20px;
+}
+
+.back {
+  text-align: left;
+  padding: 5px;
+  padding-left: 15px;
+}
+
+.back a {
+  color: #011C26;
+  text-decoration: none;
 }
