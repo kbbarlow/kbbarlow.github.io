@@ -134,3 +134,6 @@ main img{
   color: #011C26;
   text-decoration: none;
 }
+main ul{
+  margin: 0;
+}
