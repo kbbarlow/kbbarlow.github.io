@@ -13,7 +13,7 @@ footer {
 
 header,
 footer {
-  background-color: #011C26;
+  background-color: #024059;
   color: white;
   text-align: center;
 }
@@ -29,7 +29,7 @@ header {
   }
 
 nav {
-  background-color: #1D6373;
+  background-color: #77bdd9;
   text-align: center;
 }
 
@@ -42,17 +42,15 @@ nav ul {
 
 nav li a {
   display: block;
-  color: #fff;
+  color: #024059;
   text-align: center;
   padding: .75rem;
   text-decoration: none;
   font-size: .75rem;
 }
+nav ul li.active a{ background-color: rgba(0, 0, 0, 0.2); color: #fff;}
+nav ul li a:hover{ background-color: rgba(0, 0, 0, 0.4); color: #fff;}
 
-nav a:hover {
-  background-color: #4494A6;
-  color: #fff;
-}
 main {
 	display: grid;
 	grid-template-columns: 1fr;
