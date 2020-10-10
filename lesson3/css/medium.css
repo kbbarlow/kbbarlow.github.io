@@ -19,5 +19,13 @@
     .three-up {
       grid-template-columns: 1fr 1fr 1fr;
     }
-  
+    h1{
+      font-size: 2rem;
+    }
+    h2{
+      font-size: 1rem;
+    }
+  main{
+    font-size: 1rem;
+  }
     }

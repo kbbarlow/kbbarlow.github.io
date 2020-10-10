@@ -17,6 +17,16 @@ footer {
   color: white;
   text-align: center;
 }
+header {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+  }
+  header img {
+    max-width: 128px;
+  }
 
 nav {
   background-color: #1D6373;
@@ -36,7 +46,7 @@ nav li a {
   text-align: center;
   padding: .75rem;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: .75rem;
 }
 
 nav a:hover {
@@ -46,22 +56,25 @@ nav a:hover {
 main {
 	display: grid;
 	grid-template-columns: 1fr;
-  font-size: 1rem;
+  font-size: .5rem;
   
 }
 
 h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 2rem;
-  margin: 0;
+  font-size: 1rem;
+  margin: 0 5px;
+  padding: 0 5px;
 }
 
 h2 {
-  font-size: 1.25rem;
+  font-size: .8rem;
+  margin: 0;
+  padding: 0;
 }
 
 h3 {
-  font-size: .9rem;
+  font-size: .6rem;
   margin: 10px;
   color: #272F32;
 }
@@ -79,10 +92,6 @@ main {
   max-width: 1000px;
   margin: 0 auto;
   padding: 10px;
-}
-
-header {
-  padding-bottom: 10px;
 }
 
 footer {
@@ -114,8 +123,7 @@ main img{
   width: 100%;
 }
 .grid-container img{
-
-align-self: center;
+  align-self: center;
 }
 .back{
   text-align: left;
