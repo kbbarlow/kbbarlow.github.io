@@ -23,7 +23,8 @@ nav {
 }
 
 nav button {
-  margin: .2rem 2%;
+  padding: 10px;
+  margin: 0 5px;
   background-color: transparent;
   border: none;
   font-size: 1.6rem;
