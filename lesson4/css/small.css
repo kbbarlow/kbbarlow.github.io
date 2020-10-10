@@ -76,9 +76,9 @@ h1 {
 }
 
 header {
-display: grid;
-grid-template-columns: 1fr;
-grid-row: 1fr 1fr 1fr;
+display: flex;
+align-items: center;
+align-content: center;
 }
 .logo {
   width: 5rem;
