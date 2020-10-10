@@ -27,6 +27,8 @@ nav button{
 footer  {
   background-color: #01260E;
   color: #fff;
+  text-align: center;
+
 }
 nav ul{
   list-style-type: none;
@@ -104,4 +106,12 @@ justify-content: center;
 }
 main, footer{
   max-width: 960px;
+}
+footer p:first-child {
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+footer p:last-child {
+  padding-bottom: 10px;
+  padding-top: 0;
 }
