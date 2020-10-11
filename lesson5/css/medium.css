@@ -55,4 +55,12 @@ table td{
 table { 
   margin-left:auto; 
   margin-right:auto; }
+
+  .articleCity {
+    margin-left: 30px;
+    max-width: 960px;
+  }
+  .articleCity img{
+    float: right;
+  }
 }
