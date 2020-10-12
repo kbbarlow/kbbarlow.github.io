@@ -18,6 +18,15 @@
     width: 10rem;
     margin-bottom: 0;
   }
- 
+  .fiveday {
+    background-color: #77bdd9;
+    padding: 10px 0 20px 0;
+    max-width: 1000px;
+    
+    
+  }
+
+  .fiveday table {
+    background-color: #fff;
   
 }
