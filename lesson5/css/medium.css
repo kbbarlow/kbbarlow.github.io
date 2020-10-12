@@ -12,70 +12,107 @@
   footer {
     font-size: 1rem;
   }
+  .navbackground {
+  background: #77bdd9;
+  background: -moz-linear-gradient(top, #77bdd9 0%, #51abcc 100%);
+  background: -webkit-linear-gradient(top, #77bdd9 0%, #51abcc 100%);
+  background: linear-gradient(to bottom, #77bdd9 0%, #51abcc 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#77bdd9', endColorstr='#51abcc', GradientType=0);
+  }
 
   .motto {
     font-size: 1.5rem;
   }
-  .logo{
+
+  .logo {
     width: 160px;
   }
+
   .hero-ph {
     margin: 10 auto;
     border: 1px solid #011C26;
     width: 100%;
     height: 300px;
   }
-  h3{
+
+  h3 {
     text-align: center;
   }
+
   .fiveday {
     max-width: 600px;
     margin: 50px auto;
     display: block;
   }
+
   .fiveday table {
     text-align: center;
     border: 1px solid #011C26;
-    
+
   }
+
   table th {
     background-color: #024059;
     color: #fff;
   }
-  table img{
+
+  table img {
     width: 50%;
   }
-  table, th {
+
+  table,
+  th {
     border: 1px solid #011C26;
     border-collapse: collapse;
-}
-table td{
-  border-right: 1px solid #011C26;;
-}
-table { 
-  margin-left:auto; 
-  margin-right:auto; }
+  }
+
+  table td {
+    border-right: 1px solid #011C26;
+    ;
+  }
+
+  table {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   .articleCity {
     max-width: 960px;
     margin: 30px 30px;
     padding: 30px 30px;
-    
+
   }
-  .articleCity img{
+
+  .articleCity img {
     float: right;
     width: 300px;
-    margin:0 0 15px 50px;
+    margin: 0 0 15px 50px;
   }
-  .articleCity h3{
+
+  .articleCity h3 {
     text-align: left;
   }
+
   .contactInfo {
-    max-width: 960px;
     margin: 30px 30px 0;
+    grid-column: 3/5;
   }
+
+  .contact {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 30px 30px 0;
+    height: 300px;
+    
+
+  }
+
   .map {
-    width: 300px;
+    width: 250px;
     display: block;
+    grid-column: 2/3;
+    align-self: center;
+    justify-self: bottom;
+    border: 1px solid #77bdd9;
   }
+
 }

@@ -20,6 +20,8 @@ body {
 
 nav {
   font-family: 'Poppins', sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
 
 }
 
@@ -88,7 +90,7 @@ footer,
 }
 
 main {
-  max-width: 960px;
+  max-width: 1000px;
   margin: 0 auto;
 
 }
@@ -158,12 +160,17 @@ footer {
   margin-bottom: 20px;
 }
 
-.contactInfo {
+.contact {
   background-color: #CEE3EB;
   color: #011C26;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  margin-top: 20px;
+  padding-top: 20px;
   
+}
+.contactInfo {
+  display: grid;
 }
 
 .contactItem {
@@ -185,7 +192,7 @@ footer {
 }
 .contactInfo h3{
   text-align: left;
-  margin-bottom: 0;
+  margin: 0;
 }
 .social img{
 margin: 15px 1px 10px 0;
