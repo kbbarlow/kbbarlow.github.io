@@ -5,6 +5,7 @@ const options = {dateStyle: "full", };
     document.getElementById('current-date').textContent = new Date().toLocaleDateString('en-US', options);
 
 function fridayBanner(){
+  d.getDay()
   let d = new Date();
   const banner = document.querySelector('.prestonBanner');
 
