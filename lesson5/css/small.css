@@ -222,17 +222,6 @@ width: 30px;
   color: #fff;
   margin-left: 20px;
 }
-
-.back {
-  text-align: left;
-  padding: 5px;
-  padding-left: 15px;
-}
-
-.back a {
-  color: #011C26;
-  text-decoration: none;
-}
 .fiveday {
   display: none;
 }
@@ -251,4 +240,5 @@ width: 30px;
   padding: 10px;
   font-size: .8em;
   text-align: center;
+  display: block;
 }
