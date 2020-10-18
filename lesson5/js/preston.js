@@ -13,7 +13,9 @@ if (d.getDay() == 5){
 } else {
   banner.style.display = 'none';
 }
+console.log('today is ', d.getDay()); 
 }  
+window.addEventListener('DOMContentLoaded',fridayBanner);
 // function showBanner() {
 //   let d = new Date()
 //   const banner = document.getElementById('pancake-banner');
