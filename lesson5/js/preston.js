@@ -16,13 +16,3 @@ if (d.getDay() == 5){
 console.log('today is ', d.getDay()); 
 }  
 window.addEventListener('DOMContentLoaded',fridayBanner);
-// function showBanner() {
-//   let d = new Date()
-//   const banner = document.getElementById('pancake-banner');
-
-//   if (d.getDay() == 5) {
-//       banner.style.display = "block";
-//   } else {
-//       banner.style.display = "none";
-//   }
-// }
