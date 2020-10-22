@@ -15,7 +15,6 @@ function fridayBanner() {
   } else {
     banner.style.display = 'none';
   }
-  console.log('today is ', d.getDay());
 }
 function windChill() {
   let t=49;
@@ -23,10 +22,5 @@ function windChill() {
   let f = (35.74 + (0.6215*t)) - (35.75 * (Math.pow(s, 0.16))) + (0.4275*(t*(Math.pow(s , 0.16))));
   document.getElementById("output").innerHTML = "Wind Chill: " +(Math.round(f)) + " &#8457;";
 }
-window.addEventListener('DOMContentLoaded', fridayBanner, windChill);
-/*The formula to calculate the wind chill factor is 𝑓=35.74+0.6215𝑡−35.75𝑠0.16+0.4275𝑡𝑠0.16, 
-where f is the wind chill factor in Fahrenheit, 
-t is the air average temperature in Fahrenheit, 
-and s is the wind speed in miles per hour. 
-Input requirements: "Wind Chill Temperature is officially defined for temperatures 
-at or below 10 °C (50 °F) and wind speeds above 4.8 kilometers per hour (3.0 mph)." */
+window.addEventListener('load', fridayBanner());
+window.addEventListener('load', fridayBanner());
