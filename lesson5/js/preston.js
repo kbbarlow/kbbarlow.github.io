@@ -6,7 +6,7 @@ const options = {
 };
 document.getElementById('current-date').textContent = new Date().toLocaleDateString('en-US', options);
 
-function fridayBanner() {
+window.onload = function fridayBanner() {
   let d = new Date();
   const banner = document.querySelector('.prestonBanner');
 
@@ -16,4 +16,3 @@ function fridayBanner() {
     banner.style.display = 'none';
   }
 }
-window.addEventListener('DOMContentLoaded', fridayBanner());

@@ -6,7 +6,7 @@ const options = {
 };
 document.getElementById('current-date').textContent = new Date().toLocaleDateString('en-US', options);
 
-function fridayBanner() {
+window.onload = function fridayBanner() {
   let d = new Date();
   const banner = document.querySelector('.prestonBanner');
 
@@ -16,7 +16,7 @@ function fridayBanner() {
     banner.style.display = 'none';
   }
 }
-function windChill() {
+window.onload = function windChill() {
   let t = parseFloat(document.getElementById('currentTemp').textContent);
   let s= parseFloat(document.getElementById('currentWind').textContent); 
   let output = "N/A";
@@ -26,5 +26,3 @@ function windChill() {
   }
   document.getElementById("output").innerHTML = output + " &#8457;";
 }
-window.addEventListener('load', fridayBanner());
-window.addEventListener('load', windChill());
