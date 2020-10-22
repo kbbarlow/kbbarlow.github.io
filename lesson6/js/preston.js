@@ -23,4 +23,4 @@ function windChill() {
   document.getElementById("output").innerHTML = "Wind Chill: " +(Math.round(f)) + " &#8457;";
 }
 window.addEventListener('load', fridayBanner());
-window.addEventListener('load', fridayBanner());
+window.addEventListener('load', windChill());
