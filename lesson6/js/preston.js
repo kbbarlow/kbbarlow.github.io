@@ -17,10 +17,14 @@ function fridayBanner() {
   }
 }
 function windChill() {
-  let t=49;
-  let s=15; 
+  let t = parseFloat(document.getElementById('currentTemp').textContent);
+  let s= parseFloat(document.getElementById('currentWind').textContent); 
+  let output = "N/A";
+  if (t<= 50 && s>=3){
   let f = (35.74 + (0.6215*t)) - (35.75 * (Math.pow(s, 0.16))) + (0.4275*(t*(Math.pow(s , 0.16))));
-  document.getElementById("output").innerHTML = "Wind Chill: " +(Math.round(f)) + " &#8457;";
+  output = Math.round(f);
+  }
+  document.getElementById("output").innerHTML = output;
 }
 window.addEventListener('load', fridayBanner());
 window.addEventListener('load', windChill());
