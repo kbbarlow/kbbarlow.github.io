@@ -11,9 +11,9 @@ window.onload = function fridayBanner() {
   const banner = document.querySelector('.prestonBanner');
 
   if (d.getDay() == 5) {
-    banner.style.display = 'block';
+    ban.style.display = 'block';
   } else {
-    banner.style.display = 'none';
+    ban.style.display = 'none';
   }
 }
 window.onload = function windChill() {

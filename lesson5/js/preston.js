@@ -8,11 +8,11 @@ document.getElementById('current-date').textContent = new Date().toLocaleDateStr
 
 window.onload = function fridayBanner() {
   let d = new Date();
-  const banner = document.querySelector('.prestonBanner');
+  const ban = document.querySelector('.prestonBanner');
 
   if (d.getDay() == 5) {
-    banner.style.display = 'block';
+    ban.style.display = 'block';
   } else {
-    banner.style.display = 'none';
+    ban.style.display = 'none';
   }
 }
