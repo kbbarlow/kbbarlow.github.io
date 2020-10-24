@@ -8,7 +8,7 @@ document.getElementById('current-date').textContent = new Date().toLocaleDateStr
 
 window.onload = function fridayBanner() {
   let d = new Date();
-  const banner = document.querySelector('.prestonBanner');
+  const ban = document.querySelector('.prestonBanner');
 
   if (d.getDay() == 5) {
     ban.style.display = 'block';
