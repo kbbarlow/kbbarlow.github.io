@@ -29,10 +29,10 @@
   }
 
   .hero-ph {
-    margin: 10 auto;
+    margin: 10px auto;
     border: 1px solid #011C26;
     width: 100%;
-    height: 300px;
+    height: auto;
   }
 
   h3 {
@@ -111,7 +111,6 @@
     display: block;
     grid-column: 2/3;
     align-self: center;
-    justify-self: bottom;
     border: 1px solid #77bdd9;
   }
   .prestonBanner {
