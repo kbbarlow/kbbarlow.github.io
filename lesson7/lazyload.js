@@ -1,4 +1,4 @@
-const imges = document.querySelectorAll("[data-src]")
+const images = document.querySelectorAll("[data-src]")
 function preloadImage(img) {
   const src = img.getAttribute("data-src");
   if(!src){
@@ -7,7 +7,7 @@ function preloadImage(img) {
   img.src = src;
 }
 const imgOptions= {
-  threshold: 0;
+  threshold: 0,
   rootMargin:"0px 0px 300px 0px"
 };
 
