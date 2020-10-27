@@ -45,7 +45,23 @@
     <h2>Preston Idaho</h2>
     <div class="herodiv">
       <picture>
-        <img class="hero-ph" src="images/heroimage.jpg" alt="picture of a mountain above a river and forest" />
+        <source
+          srcset="images/heroimage-small@2x.jpg"
+          media="(max-width:320px)"
+        />
+        <source
+          srcset="images/heroimage-medium@2x.jpg"
+          media="(max-width:480px)"
+        />
+        <source
+          srcset="images/heroimage-large@2x.jpg"
+          media="(max-width:960px)"
+        />
+        <img
+          class="hero-ph"
+          src="images/heroimage-xlarge@2x.jpg"
+          alt="picture of sky, a mountain, and valley"
+        />
       </picture>
       <section class="weathersummary">
         <h3>Weather Summary</h3>

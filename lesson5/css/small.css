@@ -75,18 +75,16 @@ footer {
 }
 
 header {
-  padding: 5px 0;
+  padding: 5px 5px 10px 5px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 10px;
 }
 
 main,
 footer,
 .motto {
   font-family: 'Poppins', sans-serif;
-  font-size: 14px;
   line-height: 1.5em;
 }
 
@@ -238,7 +236,6 @@ width: 30px;
   background-color: #d9734e;
   color: #fff;
   padding: 10px;
-  font-size: .8em;
   text-align: center;
   display:none;
 }
