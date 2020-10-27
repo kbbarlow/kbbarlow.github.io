@@ -120,6 +120,8 @@ footer {
   color: #011C26;
   max-width: 1000px;
   margin: 0 auto;
+  font-size: 16px;
+  padding: 5px;
 }
 
 .herodiv {
