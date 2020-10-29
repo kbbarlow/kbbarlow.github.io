@@ -5,5 +5,5 @@ img{
   grid-template-columns: 1fr;
   margin: 20px;
   filter: blur(0em);
-transition: filter 3s;
+  transition: filter 3s;
 }
