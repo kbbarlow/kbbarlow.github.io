@@ -1,6 +1,4 @@
 picture {
-  max-width: 100%;
-  height: auto;
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 20px;
@@ -8,4 +6,7 @@ picture {
   img {
   filter: blur(0em);
   transition: filter 3s;
+  width: 300px;
+  height: 400px;
+
 }
