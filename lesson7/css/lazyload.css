@@ -3,7 +3,6 @@ picture {
   height: auto;
   display: grid;
   grid-template-columns: 1fr;
-  margin: 0 auto;
 }
   img {
   filter: blur(0em);
