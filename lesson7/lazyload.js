@@ -28,28 +28,3 @@ if('IntersectionObserver' in window){
       loadImages(img);
     });
   }
-
-/*
-function preloadImage(img) {
-  const src = img.getAttribute("data-src");
-  if(!src){
-    return;
-  }
-  img.src = src;
-}
-const imgObserver = new IntersectionObserver((enteries, imgObserver) => {
-enteries.forEach(enter => {
-  if(!IntersectionObserverEntry.isIntersecting){
-    return;
-  }else{
-preloadImage(entry.target);
-imgObserver.unobserve(entry.target);
-  }
-
-  }
-})
-},imgOptions)
-
-images.forEach(image => {
-imgObserver.observe(image);
-})*/
