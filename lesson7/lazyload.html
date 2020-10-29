@@ -3,31 +3,31 @@
 <meta charset="utf-8">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lazy load practice page</title>
-  <meta name="description" content="Images that progressively load to help with load time">
-  <link href="../css/normalize.css" rel="stylesheet" />
-  <link href="css/lazyload.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lazy load practice page</title>
+    <meta name="description" content="Images that progressively load to help with load time">
+    <link href="../css/normalize.css" rel="stylesheet" />
+    <link href="css/lazyload.css" rel="stylesheet" />
 </head>
 
 <body>
-  <h1>Lazy Load Practice Page</h1>
-  <picture><img src="images/placeholder.jpg" data-src="images/grassbythelake.jpg"
-      alt="grassy area near a lake with the sun peaking through" /></picture>
-  <picture><img src="images/placeholder.jpg" data-src="images/lake.jpg"
-      alt="picture of a mountain above a river and forest" /></picture>
-  <picture><img src="images/placeholder.jpg" data-src="images/mountainlake.jpg"
-      alt="picture of a mountain above a river and forest" /></picture>
-  <picture><img src="images/placeholder.jpg" data-src="images/orangeskytetons.jpg"
-      alt="picture of a mountain above a river and forest" /></picture>
-  <picture><img src="images/placeholder.jpg" data-src="images/mountainsandthenightsky.jpg"
-      alt="picture of a mountain above a river and forest" /></picture>
-  <picture><img src="images/placeholder.jpg" data-src="images/sunthroughtrees.jpg"
-      alt="picture of a mountain above a river and forest" /></picture>
+    <h1>Lazy Load Practice Page</h1>
+    <picture><img data-src="images/grassbythelake.jpg" src="images/placeholder.jpg" 
+            alt="grassy area near a lake with the sun peaking through" /></picture>
+    <picture><img  data-src="images/lake.jpg" src="images/placeholder.jpg"
+            alt="picture of a mountain above a river and forest" /></picture>
+    <picture><img  data-src="images/mountainlake.jpg" src="images/placeholder.jpg"
+            alt="picture of a mountain above a river and forest" /></picture>
+    <picture><img data-src="images/orangeskytetons.jpg" src="images/placeholder.jpg" 
+            alt="picture of a mountain above a river and forest" /></picture>
+    <picture><img data-src="images/mountainsandthenightsky.jpg" src="images/placeholder.jpg"
+            alt="picture of a mountain above a river and forest" /></picture>
+    <picture><img data-src="images/sunthroughtrees.jpg" src="images/placeholder.jpg" 
+            alt="picture of a mountain above a river and forest" /></picture>
 </body>
 <footer>
-  <script src="js/lazyload.js"></script>
+    <script src="js/lazyload.js"></script>
 </footer>
 
 </html>
