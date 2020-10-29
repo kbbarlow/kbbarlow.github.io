@@ -1,8 +1,9 @@
-picture img{
+img{
   max-width: 100%;
   height: auto;
   display: grid;
   grid-template-columns: 1fr;
   margin: 20px;
-
+  filter: blur(0em);
+transition: filter 3s;
 }
