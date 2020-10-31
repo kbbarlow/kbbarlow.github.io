@@ -46,8 +46,7 @@ h2 {
   font-size: 1.5rem;
 }
 .gallerygrid {
-  display: grid;
-  grid-template-columns: repeat (3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   align-content: center;
   justify-content: center;
 }
