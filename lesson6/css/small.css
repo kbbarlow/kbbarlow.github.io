@@ -203,7 +203,6 @@ width: 30px;
 .logo {
   width: 80px;
   height: auto;
-  margin-right: 10px;
 }
 
 .headings {
@@ -220,7 +219,6 @@ width: 30px;
 .motto {
   font-style: italic;
   color: #fff;
-  margin-left: 20px;
 }
 .fiveday {
   display: none;
