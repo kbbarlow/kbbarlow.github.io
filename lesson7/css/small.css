@@ -241,11 +241,15 @@ width: 30px;
   display:none;
 }
 .gallerygrid {
+  
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
   justify-items: center;
+  gap: 20px;
 }
 figcaption {
   text-align: center;
 }
+
+figure img { width: 100%;}

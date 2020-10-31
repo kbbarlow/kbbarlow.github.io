@@ -108,6 +108,7 @@ body{
     font-size: 1.5rem;
   }
   .gallerygrid {
+    background-color: green;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: center;
