@@ -51,4 +51,7 @@ h2 {
   align-content: center;
   justify-content: center;
 }
+.gallerybox{
+  :hover {box-shadow: 0 0 50px #333;}
+}
 }

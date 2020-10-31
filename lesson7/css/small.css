@@ -240,3 +240,8 @@ width: 30px;
   text-align: center;
   display:none;
 }
+.gallerygrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
