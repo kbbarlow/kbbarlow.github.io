@@ -1,3 +1,5 @@
+
+WebFont.load({ google: { families: ["Abril Fatface", "Poppins"] } });
 function toggleMenu() {
   document.getElementById("primaryNav").classList.toggle("hide");
 }
@@ -26,3 +28,4 @@ window.onload = function windChill() {
   }
   document.getElementById("output").innerHTML = output + " &#8457;";
 }
+

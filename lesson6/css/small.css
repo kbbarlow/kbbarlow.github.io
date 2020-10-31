@@ -14,7 +14,7 @@ footer {
 
 body {
   font-size: 16px;
-  line-height: 1.5rem;
+  line-height: 1.2;
   color: #011C26;
 }
 
@@ -86,7 +86,7 @@ main,
 footer,
 .motto {
   font-family: 'Poppins', sans-serif;
-  line-height: 2em;
+  
 }
 
 main {
@@ -226,7 +226,7 @@ width: 30px;
   display: none;
 }
 .articleCity {
-  text-align: justify;
+  text-align: left;
   background-color: #CEE3EB;
   margin: 5px;
   padding: 20px;
