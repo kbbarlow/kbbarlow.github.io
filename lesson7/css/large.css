@@ -46,14 +46,12 @@ h2 {
   font-size: 1.5rem;
 }
 .gallerygrid {
+  background-color: red;
   grid-template-columns: repeat(3, 1fr);
   align-content: center;
   justify-content: center;
-  width: 1000px;
 }
 .gallerybox:hover {box-shadow: 0 0 50px #333;}
 
-main {
 
-}
 }
