@@ -108,8 +108,5 @@ body{
     font-size: 1.5rem;
   }
 
-  .gallerygrid {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-  }
+  
 }
