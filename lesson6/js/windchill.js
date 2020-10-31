@@ -1,4 +1,4 @@
-function windChill() {
+(function windChill() {
   let t = parseFloat(document.getElementById('currentTemp').textContent);
   let s= parseFloat(document.getElementById('currentWind').textContent); 
   let output = "N/A";
@@ -7,4 +7,4 @@ function windChill() {
   output = Math.round(f);
   }
   document.getElementById("output").innerHTML = output + " &#8457;";
-};
+}());
