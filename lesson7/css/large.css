@@ -35,7 +35,6 @@
     background-color: #fff;
 
   }
-}
 h1 {
   font-size: 3rem;
 }
@@ -45,4 +44,10 @@ h2 {
 }
 .motto{
   font-size: 1.5rem;
+}
+.gallerygrid {
+  grid-template-columns: repeat (3,1fr);
+  align-content: center;
+  justify-content: center;
+}
 }
