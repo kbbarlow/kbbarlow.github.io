@@ -4,33 +4,45 @@ table {
   box-shadow: 10px 10px 15px #628ca6;
   text-align: center;
 }
+
 tbody {
-  color:black;
+  color: black;
 }
-table, th, td {
+
+table,
+th,
+td {
   border: 1px solid #aaa;
   border-collapse: collapse;
   padding: 10px;
 }
-th, .goals {
+
+th,
+.goals {
   background-color: #628ca6;
   color: white;
 }
-thead th, tfoot td {
-  color:black;
+
+thead th,
+tfoot td {
+  color: black;
   background-color: #7eb9c2;
   padding: 10px;
 }
+
 thead th {
   font-size: 1.5rem;
   font-weight: bold;
 }
-tr{
+
+tr {
   background-color: #e7f0ed;
 }
+
 tr:nth-child(odd) {
   background: #e7ffed;
 }
+
 tfoot {
   font-size: 14px;
 }
