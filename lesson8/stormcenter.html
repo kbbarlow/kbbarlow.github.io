@@ -37,14 +37,16 @@
       <li><a href="lesson5/preston-5.html">Preston</a></li>
       <li><a href="#">Soda Springs</a></li>
       <li><a href="#">Fish Haven</a></li>
-      <li><a href="#">Storm Center</a></li>
-      <li class="active"><a href="#">Gallery</a></li>
+      <li class="active"><a href="#">Storm Center</a></li>
+      <li><a href="lesson7/gallery-7.html">Gallery</a></li>
     </ul>
   </nav>
 
   <main>
-    <h2>Storm Center</h2>
-    <h3>Report a Storm</h3>
+    <div class="stormCenter">
+      <h2>Storm Center</h2>
+      <h3>Report a Storm</h3>
+    </div>
     <form method="get" action="thanks.html">
       <fieldset>
         <legend>Contact Information</legend>
@@ -66,15 +68,10 @@
             <option value="Tornado"></option>
           </datalist>
         </label>
-        <label class="top">
-          Storm Severity :
-          <span id="ratingvalue">5</span>
-        </label>
         <label class="stormrating">
+          Storm Severity : <span id="ratingvalue">5</span>
           <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
             oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-        </label>
-        <label>
           <datalist id="tickmarks">
             <option value="0">
             <option value="1">
@@ -87,24 +84,22 @@
             <option value="8">
             <option value="9">
             <option value="10">
-          </datalist></label>
+          </datalist>
+        </label>
         <label class="top">Storm Region
           <select name="subject">
-            <option value="">Please Select &#9662;</option>
-            <option value="preston"> Preston</option>
-            <option value="soda-springs"> Soda Springs"</option>
-            <option value="fish-haven"> Fish Haven</option>
-            <option value="data">Data Professional</option>
-            <option value="construction">Construction</option>
-            <option value="manufacturing">Manufacturing</option>
-            <option value="business">Business Professional</option>
-            <option value="security">Cyber Security</option>
+            <option value="">Select Region &#9662;</option>
+            <option value="preston">Preston</option>
+            <option value="soda-springs">Soda Springs</option>
+            <option value="fish-haven">Fish Haven</option>
           </select>
         </label>
-        <div>Are you in danger?</div>
-        <label class="sbs"><input type="radio" name="danger" value="no"> No</label>
-        <label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe</label>
-        <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
+        <div>
+          Are you in danger?
+          <label class="sbs"><input type="radio" name="danger" value="no"> No</label>
+          <label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe</label>
+          <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
+        </div>
       </fieldset>
       <fieldset>
         <legend>Comments</legend>

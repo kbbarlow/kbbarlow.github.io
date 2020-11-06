@@ -255,19 +255,20 @@ figcaption {
 
 figure img { width: 100%;}
 form fieldset {
-  margin: 2rem 0;
-  border: 1px solid #011C26;
+  margin: 3rem 0;
+  border: 1px solid transparent;
+  background-color:#CEE3EB;
   border-radius: 10px;
-  padding: .5rem 2%;
 }
 form legend {
   color: #024059;
-  margin: 0 1rem;
-  padding: 0 .5rem;
+  position: relative;
+  top: -1rem;
+  font-weight: bold;
 }
 form label.top, form div {
   display: block;
-  padding-top: 1rem;
+  margin-bottom: 20px;
   color: #024059;
   font-size: 1rem;
 }
@@ -282,7 +283,6 @@ form label.top input, form label.top select, form label.top textarea {
   color: #011C26;
   box-sizing: border-box;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
 }
 form label.sbs {
   display: block;
@@ -290,6 +290,7 @@ form label.sbs {
   color: #011C26;
 }
 form input.submitBtn {
+  display: block;
   border: none;
   background-color: #024059;
   color: white;
@@ -309,9 +310,15 @@ form label.stormrating input {
   display: block;
   padding: 0;
   width: 100%;
+  margin-bottom: 20px;
 }
-
-  form {
-    margin: 0 auto;
-    max-width: 320px;
-  }
+form {
+  margin: 0 auto;
+  max-width: 320px;
+}
+.stormCenter {
+  margin: 3rem;
+}
+.stormCenter h2, .stormCenter h3 {
+  margin: 0;
+}
