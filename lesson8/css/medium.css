@@ -112,5 +112,8 @@ body{
     align-items: center;
     justify-items: center;
   }
+  form {
+    max-width: 460px;
+  }
   
 }
