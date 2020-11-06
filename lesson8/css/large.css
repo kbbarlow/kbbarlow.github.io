@@ -52,3 +52,6 @@ h2 {
 }
 .gallerybox:hover {box-shadow: 0 0 50px #333;}
 }
+form label.sbs {
+  padding: .2rem 0;
+}
