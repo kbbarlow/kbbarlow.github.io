@@ -317,8 +317,15 @@ form {
   max-width: 320px;
 }
 .stormCenter {
+  display: block;
   margin: 3rem;
 }
 .stormCenter h2, .stormCenter h3 {
   margin: 0;
+}
+.stormCenter img{
+  display: block;
+  width: 48px;
+  margin: 0 auto;
+  padding: 30px;
 }
