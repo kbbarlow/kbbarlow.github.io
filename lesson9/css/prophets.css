@@ -36,6 +36,12 @@ h1, h2 {
   width: 200px;
   box-shadow: 0 5px 15px rgba(2, 64, 89, 0.6);
 }
+footer {
+  background-color: #024059;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
 @media only screen and (min-width: 35em) {
 
 .cards {
