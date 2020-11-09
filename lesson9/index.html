@@ -43,71 +43,7 @@
   </nav>
 
   <main>
-    <div class="stormCenter">
-      <h2>Storm Center</h2>
-      <h3>Report a Storm</h3>
-    </div>
-    <form method="get" action="thanks.html">
-      <fieldset>
-        <legend>Contact Information</legend>
-        </label>
-        <label class="top"> Full Name* <input type="text" name="fullname" pattern="[\sA-Za-z19]{5,}" required>
-        <label class="top"> Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
-        <label class="top"> Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
-        <label class="top"> Zip Code* <input type="number" name="number" required></label>
-      </fieldset>
-      <fieldset>
-        <legend>Storm Information</legend>
-        <label class="top">When did the storm occur? <input type="date" name="stormDate"> </label>
-        <label class="top">Storm type <input list="typeofstorm" name="stormtype">
-          <datalist id="typeofstorm">
-            <option value="Hail"></option>
-            <option value="Hurricane"></option>
-            <option value="Flash Flood"></option>
-            <option value="Thunderstorm"></option>
-            <option value="Tornado"></option>
-          </datalist>
-        </label>
-        <label class="stormrating">
-          Storm Severity : <span id="ratingvalue">5</span>
-          <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
-            oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-          <datalist id="tickmarks">
-            <option value="0">
-            <option value="1">
-            <option value="2">
-            <option value="3">
-            <option value="4">
-            <option value="5">
-            <option value="6">
-            <option value="7">
-            <option value="8">
-            <option value="9">
-            <option value="10">
-          </datalist>
-        </label>
-        <label class="top">Storm Region
-          <select name="subject">
-            <option value="">Select Region &#9662;</option>
-            <option value="preston">Preston</option>
-            <option value="soda-springs">Soda Springs</option>
-            <option value="fish-haven">Fish Haven</option>
-          </select>
-        </label>
-        <div>
-          Are you in danger?
-          <label class="sbs"><input type="radio" name="danger" value="no"> No</label>
-          <label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe</label>
-          <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
-        </div>
-        <label class="top">Comments
-        <textarea name="comment" rows="5"></textarea></label>
-      </fieldset>
-      
-
-      <input type="submit" value="Report My Storm" class="submitBtn">
-
-    </form>
+   
     <div class="contact">
       <img class="map" src="images/prestonmapsmall.png" alt="small map of preston" />
       <div class="contactInfo">
