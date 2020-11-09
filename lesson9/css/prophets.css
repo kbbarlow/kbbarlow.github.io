@@ -2,10 +2,14 @@
 .cards {
   display: grid;
   grid-template-columns: 1fr;
-  justify-items: center;
-  align-items: center;
-  gap: 20px;
+  gap: 5px;
   text-align: center;
+  justify-items: stretch;
+  align-items: stretch;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -18,19 +22,21 @@ h1, h2 {
   border: 1px solid #024059;
   background-color: #CEE3EB;
   padding: 20px;
-  width: 300px;
-  height: 400px;
 }
-img {
-  max-width: 200px;
-  box-shadow: 0 0 30px #011C26;
+.cards img {
+  object-fit: cover;
+  height: 280px;
+  width: 200px;
+  box-shadow: 0 5px 15px rgba(2, 64, 89, 0.6);
 }
 @media only screen and (min-width: 35em) {
 
 .cards {
     grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-items: center;
+
+  }
+  h1 {
+    font-size: 3rem;
   }
 }
 
@@ -38,8 +44,7 @@ img {
 
   .cards {
     grid-template-columns: repeat(4, 1fr);
-    align-content: center;
-    justify-content: center;
+ 
   }
 
 }
