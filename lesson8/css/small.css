@@ -317,22 +317,21 @@ form {
   max-width: 320px;
 }
 .stormCenter {
-  display: flex;
-  margin: 3rem;
-  height: 300px;
+  display: block;
   align-items: center;
   justify-content: center;
 }
-.stormCenter h2, .stormCenter h3 {
-  margin: 0;
+.stormCenter h2{
+  margin: 40px 0 0 0 ;
+  padding: 0;
 }
-.stormCenter img{
+ .stormCenter h3{
+   margin: 0;
+   padding: 0;
+}
+.thankYou img{
   display: block;
   width: 48px;
   margin: 0 auto;
-  padding: 30px;
-  
-}
-.thankyou {
-  
+  padding: 20px;
 }
