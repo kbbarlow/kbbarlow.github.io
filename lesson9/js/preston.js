@@ -75,22 +75,3 @@ fetch(requestURL)
       document.querySelector('div.cards').appendChild(card);
     }
   });
-
-  /*
-
-<dl class="townStats">
-  <div>
-    <dt>1864</dt>
-    <dd>Founded</dd>
-  </div>
-  <div>
-    <dt>501</dt>
-    <dd>Population</dd>
-  </div>
-  <div>
-    <dt>14.1</dt>
-    <dd>Rain/yr</dd>
-  </div>
-</dl>
-
-*/
