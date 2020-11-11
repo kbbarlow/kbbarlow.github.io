@@ -35,25 +35,62 @@ fetch(requestURL)
     const towns = jsonObject['towns'];
     for (let i = 0; i < towns.length; i++ ) {
       let card = document.createElement('section');
+      let townStats = document.createElement('dl');
+      townStats.setAttribute('class', 'townStats');
+      let photo = document.createElement('img');
       let name = document.createElement('h2');
       let motto = document.createElement('p');
-      let yearFounded = document.createElement('h3');
-      let photo = document.createElement('img');
-      let currentPopulation = document.createElement('h3');
-      let averageRainfall = document.createElement('h3')
-      name.textContent = towns[i];
+      let yearFoundedDiv = document.createElement('div');
+      let currentPopulationDiv = document.createElement('div');
+      let averageRainfallDiv = document.createElement('div');
+      let yearFoundedNum = document.createElement('dt');
+      let currentPopulationNum = document.createElement('dt');
+      let averageRainfallNum = document.createElement('dt');
+      let yearFoundedLabel = document.createElement('dd');
+      let currentPopulationLabel = document.createElement('dd');
+      let averageRainfallLabel = document.createElement('dd');
+      name.textContent = towns[i].name;
       motto.textContent = towns[i].motto;
-      yearFounded.textContent = towns[i].yearFounded;
-      currentPopulation.textContent = towns[i].currentPopulation;
-      averageRainfall.textContent = towns[i].averageRainfall;
-      photo.setAttribute('src', towns[i].photo);
-      photo.setAttribute('alt', towns[i].name);
+      yearFoundedNum.textContent = towns[i].yearFounded;
+      currentPopulationNum.textContent = towns[i].currentPopulation;
+      averageRainfallNum.textContent = towns[i].averageRainfall;
+      yearFoundedLabel.textContent = "Founded";
+      currentPopulationLabel.textContent = "Population";
+      averageRainfallLabel.textContent = "Rain/yr";
+      photo.setAttribute('src', "images/" + towns[i].photo);
+      photo.setAttribute('alt', "The lovely town of " + towns[i].name);
       card.appendChild(photo);
       card.appendChild(name);
       card.appendChild(motto);
-      card.appendChild(yearFounded);
-      card.appendChild(currentPopulation);
-      card.appendChild(averageRainfall);
+      card.appendChild(townStats);
+      townStats.appendChild(yearFoundedDiv);
+      townStats.appendChild(currentPopulationDiv);
+      townStats.appendChild(averageRainfallDiv);
+      yearFoundedDiv.appendChild(yearFoundedNum);
+      yearFoundedDiv.appendChild(yearFoundedLabel);
+      currentPopulationDiv.appendChild(currentPopulationNum);
+      currentPopulationDiv.appendChild(currentPopulationLabel);
+      averageRainfallDiv.appendChild(averageRainfallNum);
+      averageRainfallDiv.appendChild(averageRainfallLabel);
       document.querySelector('div.cards').appendChild(card);
     }
   });
+
+  /*
+
+<dl class="townStats">
+  <div>
+    <dt>1864</dt>
+    <dd>Founded</dd>
+  </div>
+  <div>
+    <dt>501</dt>
+    <dd>Population</dd>
+  </div>
+  <div>
+    <dt>14.1</dt>
+    <dd>Rain/yr</dd>
+  </div>
+</dl>
+
+*/
