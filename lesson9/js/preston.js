@@ -33,7 +33,13 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
     const towns = jsonObject['towns'];
-    for (let i = 0; i < towns.length; i++ ) {
+    function filterByName(item) {
+      if (item.name == "Preston" || item.name == "Fish Haven" || item.name == "Soda Springs") {
+        return true;
+      }
+    };
+    let specificTowns = towns.filter(filterByName);
+    for (let i = 0; i < specificTowns.length; i++) {
       let card = document.createElement('section');
       let townStats = document.createElement('dl');
       townStats.setAttribute('class', 'townStats');
@@ -49,16 +55,16 @@ fetch(requestURL)
       let yearFoundedLabel = document.createElement('dd');
       let currentPopulationLabel = document.createElement('dd');
       let averageRainfallLabel = document.createElement('dd');
-      name.textContent = towns[i].name;
-      motto.textContent = towns[i].motto;
-      yearFoundedNum.textContent = towns[i].yearFounded;
-      currentPopulationNum.textContent = towns[i].currentPopulation;
-      averageRainfallNum.textContent = towns[i].averageRainfall;
+      name.textContent = specificTowns[i].name;
+      motto.textContent = specificTowns[i].motto;
+      yearFoundedNum.textContent = specificTowns[i].yearFounded;
+      currentPopulationNum.textContent = specificTowns[i].currentPopulation;
+      averageRainfallNum.textContent = specificTowns[i].averageRainfall;
       yearFoundedLabel.textContent = "Founded";
       currentPopulationLabel.textContent = "Population";
       averageRainfallLabel.textContent = "Rain/yr";
-      photo.setAttribute('src', "images/" + towns[i].photo);
-      photo.setAttribute('alt', "The lovely town of " + towns[i].name);
+      photo.setAttribute('src', "images/" + specificTowns[i].photo);
+      photo.setAttribute('alt', "The lovely town of " + specificTowns[i].name);
       card.appendChild(photo);
       card.appendChild(name);
       card.appendChild(motto);
