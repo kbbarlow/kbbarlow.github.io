@@ -335,3 +335,20 @@ form {
   margin: 0 auto;
   padding: 20px;
 }
+.townStats {
+  display: flex;
+}
+.townStats div {
+  width: 100px;
+  text-align: center;
+}
+.townStats dt {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.townStats dd {
+  display: inline;
+  margin: 0;
+  font-size: 14px;
+}
