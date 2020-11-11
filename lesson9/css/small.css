@@ -131,7 +131,7 @@ footer {
 }
 
 .hero-ph {
-  margin: 10px auto;
+  margin: 0px auto;
   width: 100%;
   height: auto;
 }
@@ -344,7 +344,7 @@ form {
 }
 .townStats dt {
   font-size: 21px;
-  font-weight: 500;
+  font-weight: 550;
   margin-bottom: 0px;
 }
 .townStats dd {
@@ -374,7 +374,7 @@ form {
 .cards p {
 text-align: center;
 margin: 2 0 20px 0;
-padding: 0 16px;
+padding: 0 16px 10px 0;
 height: 32px;
 }
 .cards h2{
