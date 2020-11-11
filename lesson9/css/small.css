@@ -353,6 +353,9 @@ form {
   font-size: 12px;
 }
 .cards section {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 50% 15% 20% 15%;
   background-color: #ffffff;
   padding: 20px;
   width: 343px;
@@ -360,10 +363,11 @@ form {
   box-shadow: 0 5px 15px rgba(2, 64, 89, 0.4);
   margin: 0 auto;
   margin-bottom:30px;
-  padding: 0 0 25px;
+  padding: 0 0 10px;
+  align-items: center;
+  justify-items: center;
 }
 .cards img {
-  display: block;
   object-fit: cover;
   width: 343px;
   height: 200px;
@@ -373,12 +377,11 @@ form {
 }
 .cards p {
 text-align: center;
-margin: 2 0 20px 0;
-padding: 0 16px 10px 0;
 height: 32px;
 }
 .cards h2{
-  margin: 10px 0 0;
+  margin: 20px 0 0;
+  
 }
 .townStats {
   width: 300px;
