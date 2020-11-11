@@ -343,30 +343,43 @@ form {
   text-align: center;
 }
 .townStats dt {
-  font-size: 32px;
-  font-weight: 600;
-  margin-bottom: 5px;
+  font-size: 21px;
+  font-weight: 500;
+  margin-bottom: -5px;
 }
 .townStats dd {
   display: inline;
   margin: 0;
-  font-size: 14px;
+  font-size: 12px;
 }
 .cards section {
   background-color: #ffffff;
   padding: 20px;
   width: 343px;
   border-radius:8px;
-  box-shadow: 0 5px 15px rgba(2, 64, 89, 0.6);
+  box-shadow: 0 5px 15px rgba(2, 64, 89, 0.4);
   margin: 0 auto;
-  margin-bottom:10px;
-  padding: 0;
+  margin-bottom:30px;
+  padding: 0 0 25px;
 }
 .cards img {
+  display: block;
   object-fit: cover;
   width: 343px;
-  height: 266px;
+  height: 200px;
   padding: 0;
   border-radius:8px 8px 0 0;
   
+}
+.cards p {
+text-align: center;
+margin: 0 0 20px 0;
+padding: 0 16px;
+}
+.cards h2{
+  margin: 10px 0 0;
+}
+.townStats {
+  width: 300px;
+  margin: 0 auto;
 }

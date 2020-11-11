@@ -59,7 +59,7 @@ fetch(requestURL)
       motto.textContent = specificTowns[i].motto;
       yearFoundedNum.textContent = specificTowns[i].yearFounded;
       currentPopulationNum.textContent = specificTowns[i].currentPopulation;
-      averageRainfallNum.textContent = specificTowns[i].averageRainfall;
+      averageRainfallNum.textContent = specificTowns[i].averageRainfall + "\"";
       yearFoundedLabel.textContent = "Founded";
       currentPopulationLabel.textContent = "Population";
       averageRainfallLabel.textContent = "Rain/yr";
