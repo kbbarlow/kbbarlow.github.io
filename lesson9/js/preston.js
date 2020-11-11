@@ -32,22 +32,22 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    const prophets = jsonObject['towns'];
+    const towns = jsonObject['towns'];
     for (let i = 0; i < towns.length; i++ ) {
       let card = document.createElement('section');
       let name = document.createElement('h2');
-      let birthDate = document.createElement('p');
-      let birthPlace = document.createElement('p');
-      let portrait = document.createElement('img');
-      name.textContent = prophets[i].name + ' ' + prophets[i].lastname;
-      birthDate.textContent = 'Date of Birth: ' + prophets[i].birthdate;
-      birthPlace.textContent = 'Place of Birth: ' + prophets[i].birthplace;
-      portrait.setAttribute('src', prophets[i].imageurl);
-      portrait.setAttribute('alt', prophets[i].name + ' ' + prophets[i].lastname + ' ' + '-' + ' ' + prophets[i].order);
+      let motto = document.createElement('p');
+      let yearFounded = document.createElement('p');
+      let photo = document.createElement('img');
+      name.textContent = towns[i];
+      motto.textContent = towns[i].motto;
+      yearFounded.textContent = towns[i].yearFounded;
+      portrait.setAttribute('src', towns[i].photo);
+      portrait.setAttribute('alt', towns[i].name);
       card.appendChild(name);
-      card.appendChild(birthDate);
-      card.appendChild(birthPlace);
-      card.appendChild(portrait);
+      card.appendChild(motto);
+      card.appendChild(yearFounded);
+      card.appendChild(photo);
       document.querySelector('div.cards').appendChild(card);
     }
   });
