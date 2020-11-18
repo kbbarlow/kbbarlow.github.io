@@ -1,5 +1,5 @@
 (function windChill() {
-  let t = parseFloat(document.getElementById('currentTemp').textContent);
+  let t = parseFloat(document.getElementById('current-temp').textContent);
   let s= parseFloat(document.getElementById('currentWind').textContent); 
   let output = "N/A";
   if (t<= 50 && s>=3){
