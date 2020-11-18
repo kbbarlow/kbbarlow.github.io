@@ -328,6 +328,7 @@ form {
  .stormCenter h3{
    margin: 0;
    padding: 0;
+   text-align: center;
 }
 .thankYou img{
   display: block;
