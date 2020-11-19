@@ -1,19 +1,18 @@
-
-
 const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=f59f532633b10d55bbf07be7f8538bff&units=imperial';
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
+    console.table(jsObject); // get rid of this later
+    document.getElementById('weather').textContent = jsObject.weather[0].description;
     document.getElementById('current-temp').textContent = Math.round(jsObject.main.temp);
+    document.getElementById('humidity').textContent = jsObject.main.humidity;
     document.getElementById('speed').textContent = jsObject.wind.speed;
     document.getElementById('humidity').textContent = jsObject.main.humidity;
-    document.getElementById('weather').textContent = jsObject.weather[0].description;
-    const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';
-    const desc = jsObject.weather[0].description;
-    document.getElementById('imagesrc').textContent = imagesrc;
-    document.getElementById('icon').setAttribute('src', imagesrc);
-    document.getElementById('icon').setAttribute('alt', desc);
+    // const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';
+    // const desc = jsObject.weather[0].description;
+    // document.getElementById('imagesrc').textContent = imagesrc;
+    // document.getElementById('icon').setAttribute('src', imagesrc);
+    // document.getElementById('icon').setAttribute('alt', desc);
   });
   function windChill() {
     let t = parseFloat(document.getElementById('current-temp').textContent);
@@ -24,4 +23,4 @@ fetch(apiURL)
     output = Math.round(f);
     }
     document.getElementById("output").innerHTML = output + " &#8457;";
-  }
+  };
