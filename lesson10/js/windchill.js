@@ -8,7 +8,7 @@ fetch(apiURL)
     document.getElementById('current-temp').textContent = jsObject.main.temp;
     document.getElementById('speed').textContent = jsObject.wind.speed;
     document.getElementById('humitity').textContent = jsObject.main.humitity;
-    document.getElementById('max-temp').textContent = jsObject.main.temp_max;
+    document.getElementById('weather').textContent = jsObject.weather.main;
     const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';
     const desc = jsObject.weather[0].description;
     document.getElementById('imagesrc').textContent = imagesrc;
