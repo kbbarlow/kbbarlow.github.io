@@ -5,10 +5,10 @@ fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
     console.log(jsObject);
-    document.getElementById('current-temp').textContent = jsObject.main.temp;
+    document.getElementById('current-temp').textContent = Math.round(jsObject.main.temp);
     document.getElementById('speed').textContent = jsObject.wind.speed;
-    document.getElementById('humitity').textContent = jsObject.main.humitity;
-    document.getElementById('weather').textContent = jsObject.weather.main;
+    document.getElementById('humidity').textContent = jsObject.main.humidity;
+    document.getElementById('weather').textContent = jsObject.weather[1].main.weather;
     const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';
     const desc = jsObject.weather[0].description;
     document.getElementById('imagesrc').textContent = imagesrc;
@@ -18,7 +18,7 @@ fetch(apiURL)
 
   (function windChill() {
     let t = parseFloat(document.getElementById('current-temp').textContent);
-    let s= parseFloat(document.getElementById('speed').textContent); 
+    let s = parseFloat(document.getElementById('speed').textContent); 
     let output = "N/A";
     if (t<= 50 && s>=3){
     let f = (35.74 + (0.6215*t)) - (35.75 * (Math.pow(s, 0.16))) + (0.4275*(t*(Math.pow(s , 0.16))));
