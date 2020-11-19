@@ -3,24 +3,21 @@ fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
     console.table(jsObject); // get rid of this later
-    document.getElementById('weather').textContent = jsObject.weather[0].description;
-    document.getElementById('current-temp').textContent = Math.round(jsObject.main.temp);
-    document.getElementById('humidity').textContent = jsObject.main.humidity;
-    document.getElementById('speed').textContent = jsObject.wind.speed;
-    document.getElementById('humidity').textContent = jsObject.main.humidity;
+    let t = parseFloat(jsObject.main.temp);
+    let s = parseFloat(jsObject.wind.speed);
+    let output = "N/A";
+    document.getElementById('weather').innerHTML = jsObject.weather[0].description;
+    document.getElementById('current-temp').innerHTML = Math.round(t) + "&#8457;";
+    if (t<=50 && s>=3) {
+      let f = (35.74 + (0.6215*t)) - (35.75 * (Math.pow(s, 0.16))) + (0.4275*(t*(Math.pow(s, 0.16))));
+      output = Math.round(f);
+    };
+    document.getElementById("output").innerHTML = output + "&#8457;";
+    document.getElementById('humidity').innerHTML = jsObject.main.humidity + "&#37;";
+    document.getElementById('speed').innerHTML = Math.round(s) + " mph";
     // const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';
     // const desc = jsObject.weather[0].description;
     // document.getElementById('imagesrc').textContent = imagesrc;
     // document.getElementById('icon').setAttribute('src', imagesrc);
     // document.getElementById('icon').setAttribute('alt', desc);
   });
-  function windChill() {
-    let t = parseFloat(document.getElementById('current-temp').textContent);
-    let s = parseFloat(document.getElementById('speed').textContent); 
-    let output = "N/A";
-    if (t<=50 && s>=3){
-    let f = (35.74 + (0.6215*t)) - (35.75 * (Math.pow(s, 0.16))) + (0.4275*(t*(Math.pow(s , 0.16))));
-    output = Math.round(f);
-    }
-    document.getElementById("output").innerHTML = output + " &#8457;";
-  };

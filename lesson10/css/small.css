@@ -157,6 +157,10 @@ footer {
   text-decoration: underline;
 }
 
+#weather {
+  text-transform: capitalize;
+}
+
 .articleCity img {
   width: 100%;
   box-shadow: 0 0 30px #011C26;
