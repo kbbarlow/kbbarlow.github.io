@@ -15,14 +15,13 @@ fetch(apiURL)
     document.getElementById('icon').setAttribute('src', imagesrc);
     document.getElementById('icon').setAttribute('alt', desc);
   });
-
-  (function windChill() {
+  function windChill() {
     let t = parseFloat(document.getElementById('current-temp').textContent);
     let s = parseFloat(document.getElementById('speed').textContent); 
     let output = "N/A";
-    if (t<= 50 && s>=3){
+    if (t<=50 && s>=3){
     let f = (35.74 + (0.6215*t)) - (35.75 * (Math.pow(s, 0.16))) + (0.4275*(t*(Math.pow(s , 0.16))));
     output = Math.round(f);
     }
     document.getElementById("output").innerHTML = output + " &#8457;";
-  }());
+  }
