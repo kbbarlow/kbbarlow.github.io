@@ -2,7 +2,6 @@ const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.table(jsObject); // get rid of this later
     let t = parseFloat(jsObject.main.temp);
     let s = parseFloat(jsObject.wind.speed);
     let output = "N/A";
@@ -21,9 +20,7 @@ const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473
 fetch(forecastURL)
   .then((response) => response.json())
   .then((forecastObject) => {
-    console.table(forecastObject);
     var forecast = forecastObject.list.filter(x => x.dt_txt.includes('18:00:00'));
-    console.table(forecast);
     const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
     for (let day = 0; day < forecast.length; day++) {
       const d = new Date(forecast[day].dt_txt);
