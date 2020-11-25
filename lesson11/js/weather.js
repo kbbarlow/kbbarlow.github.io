@@ -1,5 +1,39 @@
-const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=f59f532633b10d55bbf07be7f8538bff&units=imperial';
-fetch(apiURL)
+// Actual variables
+const APIurl = 'https://api.openweathermap.org/data/2.5/';
+const weatherAPIurl = APIurl + 'weather';
+const forecastAPIurl = APIurl + 'forecast';
+const apiID = '&appid=f59f532633b10d55bbf07be7f8538bff';
+const apiUnits = '&units=imperial';
+const prestonURL = '?id=5604473' + apiID + apiUnits;
+const sodaspringsURL = '?id=5607916' + apiID + apiUnits;
+const fishhavenURL = '?lat=42.0380399&lon=-111.4048681' + apiID + apiUnits;
+
+// Just puttin' it all together
+const prestonWeather = weatherAPIurl + prestonURL;
+const sodaspringsWeather = weatherAPIurl + sodaspringsURL;
+const fishhavenWeather = weatherAPIurl + fishhavenURL;
+const prestonForecast = forecastAPIurl + prestonURL;
+const sodaspringsForecast = forecastAPIurl + sodaspringsURL;
+const fishhavenForecast = forecastAPIurl + fishhavenURL;
+
+// Page selector
+let weatherURL = "";
+let forecastURL = "";
+if (document.getElementById("preston")){
+  weatherURL = prestonWeather;
+  forecastURL = prestonForecast;
+}
+else if (document.getElementById("sodasprings")){
+  weatherURL = sodaspringsWeather;
+  forecastURL = sodaspringsForecast;
+}
+else if (document.getElementById("fishhaven")){
+  weatherURL = fishhavenWeather;
+  forecastURL = fishhavenForecast;
+}
+
+// Weather functions
+fetch(weatherURL)
   .then((response) => response.json())
   .then((jsObject) => {
     let t = parseFloat(jsObject.main.temp);
@@ -14,9 +48,7 @@ fetch(apiURL)
     document.getElementById("output").innerHTML = output + "&#8457;";
     document.getElementById('humidity').innerHTML = jsObject.main.humidity + "&#37;";
     document.getElementById('speed').innerHTML = Math.round(s) + " mph";
-
   });
-const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=f59f532633b10d55bbf07be7f8538bff';
 fetch(forecastURL)
   .then((response) => response.json())
   .then((forecastObject) => {
@@ -32,5 +64,4 @@ fetch(forecastURL)
       document.getElementById(`icon${day+1}`).setAttribute('src', imagesrc);
       document.getElementById(`icon${day+1}`).setAttribute('alt', desc);
     }
-
   });
