@@ -6,7 +6,7 @@ function toggleMenu() {
   let d = new Date();
   const ban = document.querySelector('.prestonBanner');
 
-  if (d.getDay() == 5)
+  if (d.getDay() == 3)
    {
     ban.style.display = 'block';
   } else {
