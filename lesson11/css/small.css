@@ -20,8 +20,6 @@ body {
 
 nav {
   font-family: 'Poppins', sans-serif;
-
-
 }
 
 nav button {
@@ -103,6 +101,10 @@ h1 {
 }
 
 h2 {
+  text-align: center;
+}
+
+h3 {
   text-align: center;
 }
 
@@ -239,7 +241,50 @@ footer {
 }
 
 .fiveday {
-  display: none;
+  margin: 0;
+}
+
+.fiveday table {
+  text-align: center;
+  border: 1px solid #011C26;
+}
+.fiveday [id^="icon"] { 
+  width: 50px;
+}
+
+.fiveday table th {
+  background-color: #024059;
+  color: #fff;
+}
+
+.fiveday table img {
+  width: 50%;
+}
+
+.fiveday table, .fiveday th {
+  border: 1px solid #011C26;
+  border-collapse: collapse;
+}
+
+.fiveday table td {
+  border-right: 1px solid #011C26;
+  ;
+}
+
+.fiveday table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.town-events {
+  margin: 48px 16px;
+}
+
+.town-events ul {
+  text-align: center;
+  margin: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .articleCity {
