@@ -43,9 +43,9 @@ fetch(weatherURL)
     document.getElementById('current-temp').innerHTML = Math.round(t) + "&#8457;";
     if (t <= 50 && s >= 3) {
       let f = (35.74 + (0.6215 * t)) - (35.75 * (Math.pow(s, 0.16))) + (0.4275 * (t * (Math.pow(s, 0.16))));
-      output = Math.round(f);
+      output = Math.round(f) + "&#8457;";
     };
-    document.getElementById("output").innerHTML = output + "&#8457;";
+    document.getElementById("output").innerHTML = output;
     document.getElementById('humidity').innerHTML = jsObject.main.humidity + "&#37;";
     document.getElementById('speed').innerHTML = Math.round(s) + " mph";
   });
