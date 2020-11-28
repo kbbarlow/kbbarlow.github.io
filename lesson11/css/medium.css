@@ -28,6 +28,13 @@
   .fiveday [id^="icon"] { 
     width: 100px;
   }
+  .town-events h3, .fiveday h3{
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  .town-events li{
+    font-size: 1.25em;
+  }
 
   .articleCity {
     max-width: 960px;

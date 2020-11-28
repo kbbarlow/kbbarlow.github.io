@@ -27,8 +27,9 @@
 
   .fiveday {
     background-color: #77bdd9;
-    padding: 10px 0 20px 0;
+    padding: 10px 0 40px 0;
     max-width: 1000px;
+    margin-top: 20px;
   }
 
   .fiveday table {
