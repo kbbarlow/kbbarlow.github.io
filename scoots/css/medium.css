@@ -1,0 +1,28 @@
+@media only screen and (min-width:37.5em) {
+  body {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  nav ul {
+    display: flex;}
+    nav ul li {
+      flex: 1 1 100%;
+    }
+    .grid-container {
+      display: grid;
+      font-size: 1rem;
+      grid-gap: 20px;
+    }
+    .two-up {
+      grid-template-columns: 1fr 1fr;
+    }
+    h1{
+      font-size: 4rem;
+    }
+    h2{
+      font-size: 1rem;
+    }
+  main{
+    font-size: 1rem;
+  }
+    }
