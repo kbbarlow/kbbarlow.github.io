@@ -10,25 +10,17 @@ footer, nav {
   font-family: 'Lato', Sans-Serif;
 }
 
-header,
 footer {
   background-color: #023047;
   color: white;
   text-align: center;
 }
 header {
-  padding: 5px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 10px;
-  }
-  header img {
-    max-width: 128px;
+  
   }
 
 nav {
-  background-color: #8ECAE6;
+  background-color: #ffffff;
   font-weight: bold;
   text-align: center;
 }
@@ -52,16 +44,11 @@ nav li a {
 nav ul li.active a{ background-color: rgba(251, 133, 0, 0.9); color: #fff;}
 nav ul li a:hover{ background-color: rgba(33, 158, 188, 1); color: #fff;}
 
-main {
-	display: grid;
-	grid-template-columns: 1fr;
-  font-size: .5rem;
-  
-}
+
 
 h1 {
   font-family: 'Sonsie One', cursive;
-  font-size: 2rem;
+  font-size: 1rem;
   margin: 0 5px;
   padding: 0 5px;
 }
@@ -107,38 +94,4 @@ footer {
 footer p:last-child {
   margin-bottom: 0;
 }
-.sonsie {
-font-family: 'Sonsie One', cursive;
-font-size: 48px;}
-.lato {
-font-family: 'Lato', sans-serif;
-font-size: 16px;
-}
-td {
-border: 2px solid #023047;
-text-align: center;
-padding: 10px;
-}
-table{
-  width: 100%;
-  border-collapse: collapse;
-}
-main img{
-  margin-top: 20px;
-  width: 100%;
-}
-.grid-container img{
-  align-self: center;
-}
-.back{
-  text-align: left;
-  padding: 5px;
-  padding-left: 15px;
-}
-.back a{
-  color: #011C26;
-  text-decoration: none;
-}
-main ul{
-  margin: 0;
-}
+
