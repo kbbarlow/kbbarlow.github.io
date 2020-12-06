@@ -38,12 +38,29 @@
   </header>
   
 <main>
-  <img src="images/jeepdudes-large.jpg">
-</main>
+  <div class="herodiv">
+    <picture>
+      <source srcset="images/jeepdudes-small.jpg" media="(max-width:450px)" />
+      <source srcset="images/jeepdudes-medium.jpg" media="(max-width:700px)" />
+      <source srcset="images/jeepdudes-large" media="(max-width:1000px)" />
+      <img class="hero-ph" src="images/jeepdudes-large.jpg" alt="picture of sky, snowy mountain, and valley" />
+    </picture></div>
+    </main>
   <footer>
+    <h2>Scoots</h2>
+    <p></p>
+    <div class="social">
+      <a target="_blank" rel="noreferrer" href="https://www.facebook.com/"><img src="images/facebook32.png"
+          alt="facebook icon" /></a>
+      <a target="_blank" rel="noreferrer" href="https://www.pinterest.com/"><img src="images/pinterest32.png"
+          alt="pinterest icon" /></a>
+      <a target="_blank" rel="noreferrer" href="https://twitter.com//"><img src="images/twitter32.png" alt="twitter icon" /></a>
+      <a target="_blank" rel="noreferrer" href="https://www.instagram.com/"><img src="images/instagram32.png"
+          alt="instagram icon" /></a>
+    </div>
+
     <p>
-      &copy;<span id="current-date"></span> | Brooke Barlow | Utah |
-      <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+      &copy;<span id="current-date"></span> 
     </p>
     <p>
       <small>Last Updated:<span id="last-updated"></span> </small>
