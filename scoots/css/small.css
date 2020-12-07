@@ -10,13 +10,15 @@ footer, nav {
   font-family: 'Lato', Sans-Serif;
 }
 
-footer {
+footer, .weatheralert {
   background-color: #023047;
   color: white;
   text-align: center;
+  padding: 5px;
 }
 header {
-  
+  display: flex;
+  justify-content: space-between;
 }
 
 nav {
@@ -51,6 +53,7 @@ h1 {
   font-size: 1rem;
   margin: 0 5px;
   padding: 0 5px;
+  border-bottom: 4px solid #FB8500;
 }
 
 h2 {
@@ -93,4 +96,5 @@ footer {
   padding: 20px;
   width: 100%;
 }
+
 
