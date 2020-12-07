@@ -55,8 +55,9 @@
     <img class="hero-ph" src="images/blue-1950x1140.jpg" alt="light blue one person scooter" />
   </picture>
   <h2>Scooters</h2>
-  <p>One to two person scooters avaialble</p>
-  <button>Rent Now</button>
+  <p>Three different types of scooters to serve your needs</p>
+  <p>Our scooters can seat 1 to 2 people</p>
+  <button>Show me</button>
     
     <picture>
       <source srcset="images/greenatv488x350.png" media="(max-width:450px)" />
@@ -65,8 +66,9 @@
       <img class="hero-ph" src="images/greenatv1950x1140.png" alt="green 2 seater ATV" />
     </picture>
     <h2>ATVs</h2>
-  <p>Two person ATVs avaialble</p>
-  <button>Rent Now</button>
+    <p>For your off-road adventures</p>
+  <p>We have two person ATVs avaialble</p>
+  <button>Show me</button>
     <picture>
       <source srcset="images/4doorjeep488x350.png" media="(max-width:450px)" />
       <source srcset="images/4doorjeep700x520.png" media="(max-width:700px)" />
@@ -75,7 +77,44 @@
     </picture>
     <h2>Scooters</h2>
   <p>Two or Four Door jeeps</p>
-  <button>Rent Now</button>
+  <button>Show me</button>
+  <section class="weathersummary">
+    <h2>Weather Summary</h2>
+    <p>Currently: <span id="weather"></span></p>
+    <p>Current Temp: <span id="current-temp"></span></p>
+    <p>Wind Chill: <span id="output"></span></p>
+    <p>Humidity: <span id="humidity"></span></p>
+    <p>Wind Speed: <span id="speed"></span></p>
+  </section>
+  <div class="fiveday">
+    <h2>5 Day Forecast</h2>
+    <table>
+      <tr>
+        <th><span id="dayofweek1"></span></th>
+        <th><span id="dayofweek2"></span></th>
+        <th><span id="dayofweek3"></span></th>
+      </tr>
+      <tr>
+        <td><img id="icon1"
+            src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
+            alt="unknown" /></td>
+        <td><img id="icon2"
+            src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
+            alt="unknown"></td>
+        <td><img id="icon3"
+            src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
+            alt="unknown"></td>
+      </tr>
+      <tr>
+        <td><span id="forecast1"></span>&#8457;</td>
+        <td><span id="forecast2"></span>&#8457;</td>
+        <td><span id="forecast3"></span>&#8457;</td>
+      </tr>
+    </table>
+  </div>
+  <h2>2 Locations to Serve you</h2>
+  <img src="images/Storefront 1.jpg" alt="scoots store 1 storefront"/>
+  <img src="images/Storefront 2.jpg" alt="scoots store 2 storefront"/>
 
 
     </main>
@@ -117,6 +156,7 @@
     </p>
   </footer>
   <script src="js/common.js"></script>
+  <script src="js/weather.js"></script>
 </body>
 
 </html>
