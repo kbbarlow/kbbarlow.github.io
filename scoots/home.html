@@ -18,47 +18,46 @@
 <body>
   <header>
     <section>
-  <nav>
-  <ul>
-    <li class="active"><a href="home.html">Home</a></li>
-    <li><a href="rentals.html">Rentals</a></li>
-    <li><a href="reservation.html">Reserve</a></li>
-    <li><a href="tours.html">Tours</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
-  <header>
-    <section>
-      <h1>~Scoots</h1>
-      <h2>Where your next adventure begins</h2>
-    </section>
-    <div class="weatheralert">
-      <p>Display Weather alert</p>
-    </div>
+      <nav>
+        <ul>
+          <li class="active"><a href="home.html">Home</a></li>
+          <li><a href="rentals.html">Rentals</a></li>
+          <li><a href="reservation.html">Reserve</a></li>
+          <li><a href="tours.html">Tours</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <section>
+        <h1>~Scoots</h1>
+        <h2>Where your next adventure begins</h2>
+      </section>
+      <div class="weatheralert">
+        <p>Display Weather alert</p>
+      </div>
   </header>
-  
-<main>
-  <div class="herodiv">
-    <button>BOOK NOW</button>
+
+  <main>
+    <div class="herodiv">
+      <button>Get Started</button>
+      <picture>
+        <source srcset="images/jeepdudes-small.jpg" media="(max-width:450px)" />
+        <source srcset="images/jeepdudes-medium.jpg" media="(max-width:700px)" />
+        <source srcset="images/jeepdudes-large.jpg" media="(max-width:1000px)" />
+        <img class="hero-ph" src="images/jeepdudes-large.jpg" alt="2 guys standing by a jeep" />
+      </picture>
+    </div>
+    <h2>Rentals</h2>
     <picture>
-      <source srcset="images/jeepdudes-small.jpg" media="(max-width:450px)" />
-      <source srcset="images/jeepdudes-medium.jpg" media="(max-width:700px)" />
-      <source srcset="images/jeepdudes-large.jpg" media="(max-width:1000px)" />
-      <img class="hero-ph" src="images/jeepdudes-large.jpg" alt="2 guys standing by a jeep" />
+      <source srcset="images/blue-488x350.jpg" media="(max-width:450px)" />
+      <source srcset="images/blue-640x520.jpg" media="(max-width:700px)" />
+      <source srcset="images/blue-800x600.jpg" media="(max-width:1000px)" />
+      <img class="hero-ph" src="images/blue-1950x1140.jpg" alt="light blue one person scooter" />
     </picture>
-  </div>
-  <h2>Rentals</h2>
-  <picture>
-    <source srcset="images/blue-488x350.jpg" media="(max-width:450px)" />
-    <source srcset="images/blue-640x520.jpg" media="(max-width:700px)" />
-    <source srcset="images/blue-800x600.jpg" media="(max-width:1000px)" />
-    <img class="hero-ph" src="images/blue-1950x1140.jpg" alt="light blue one person scooter" />
-  </picture>
-  <h2>Scooters</h2>
-  <p>Three different types of scooters to serve your needs</p>
-  <p>Our scooters can seat 1 to 2 people</p>
-  <button>Show me</button>
-    
+    <h2>Scooters</h2>
+    <p>Three different types of scooters to serve your needs</p>
+    <p>Our scooters can seat 1 to 2 people</p>
+    <button>Show me</button>
+
     <picture>
       <source srcset="images/greenatv488x350.png" media="(max-width:450px)" />
       <source srcset="images/greenatv640x520.png" media="(max-width:700px)" />
@@ -67,8 +66,8 @@
     </picture>
     <h2>ATVs</h2>
     <p>For your off-road adventures</p>
-  <p>We have two person ATVs avaialble</p>
-  <button>Show me</button>
+    <p>We have two person ATVs avaialble</p>
+    <button>Show me</button>
     <picture>
       <source srcset="images/4doorjeep488x350.png" media="(max-width:450px)" />
       <source srcset="images/4doorjeep700x520.png" media="(max-width:700px)" />
@@ -76,63 +75,65 @@
       <img class="hero-ph" src="images/4doorjeep1950x1140.png" alt="white four door jeep with the roof off" />
     </picture>
     <h2>Scooters</h2>
-  <p>Two or Four Door jeeps</p>
-  <button>Show me</button>
-  <section class="weathersummary">
-    <h2>Weather Summary</h2>
-    <p>Currently: <span id="weather"></span></p>
-    <p>Current Temp: <span id="current-temp"></span></p>
-    <p>Wind Chill: <span id="output"></span></p>
-    <p>Humidity: <span id="humidity"></span></p>
-    <p>Wind Speed: <span id="speed"></span></p>
-  </section>
-  <div class="fiveday">
-    <h2>5 Day Forecast</h2>
-    <table>
-      <tr>
-        <th><span id="dayofweek1"></span></th>
-        <th><span id="dayofweek2"></span></th>
-        <th><span id="dayofweek3"></span></th>
-      </tr>
-      <tr>
-        <td><img id="icon1"
-            src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
-            alt="unknown" /></td>
-        <td><img id="icon2"
-            src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
-            alt="unknown"></td>
-        <td><img id="icon3"
-            src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
-            alt="unknown"></td>
-      </tr>
-      <tr>
-        <td><span id="forecast1"></span>&#8457;</td>
-        <td><span id="forecast2"></span>&#8457;</td>
-        <td><span id="forecast3"></span>&#8457;</td>
-      </tr>
-    </table>
-  </div>
-  <h2>2 Locations to Serve you</h2>
-  <img src="images/Storefront 1.jpg" alt="scoots store 1 storefront"/>
-  <img src="images/Playa Del Carmen.png" alt="scoots store 2 storefront"/>
-  <img src="images/Puerta Maya.png" alt="scoots store 2 storefront"/>
-  <img src="images/Storefront 2.jpg" alt="scoots store 2 storefront"/>
-  
+    <p>Two or Four Door jeeps</p>
+    <button>Show me</button>
+    <section class="weathersummary">
+      <h2>Weather Summary</h2>
+      <p>Currently: <span id="weather"></span></p>
+      <p>Current Temp: <span id="current-temp"></span></p>
+      <p>Wind Chill: <span id="output"></span></p>
+      <p>Humidity: <span id="humidity"></span></p>
+      <p>Wind Speed: <span id="speed"></span></p>
+    </section>
+    <div class="fiveday">
+      <h2>5 Day Forecast</h2>
+      <table>
+        <tr>
+          <th><span id="dayofweek1"></span></th>
+          <th><span id="dayofweek2"></span></th>
+          <th><span id="dayofweek3"></span></th>
+        </tr>
+        <tr>
+          <td><img id="icon1"
+              src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
+              alt="unknown" /></td>
+          <td><img id="icon2"
+              src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
+              alt="unknown"></td>
+          <td><img id="icon3"
+              src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
+              alt="unknown"></td>
+        </tr>
+        <tr>
+          <td><span id="forecast1"></span>&#8457;</td>
+          <td><span id="forecast2"></span>&#8457;</td>
+          <td><span id="forecast3"></span>&#8457;</td>
+        </tr>
+      </table>
+    </div>
+    <h2>2 Locations to Serve you</h2>
+    <img src="images/Storefront 1.jpg" alt="scoots store 1 storefront" />
+    <img src="images/Playa Del Carmen.png" alt="scoots store 2 storefront" />
+    <img src="images/Puerta Maya.png" alt="scoots store 2 storefront" />
+    <img src="images/Storefront 2.jpg" alt="scoots store 2 storefront" />
 
 
-    </main>
+
+  </main>
   <footer>
     <h2 class="emphasized">Scoots</h2>
     <div class="contactItem address">
       <img src="images/location32.png" alt="location marker" />
-      <p>Av. Rafael E. Melgar, Centro, 77600 <br>San Miguel de Cozumel, Q.R., Mexico</div>
-        <div class="contactItem phone">
-          <img src="images/phone32.png" alt="mobile phone icon" />
-          <p>+52 987 878 4391</p>
-        </div>
+      <p>Av. Rafael E. Melgar, Centro, 77600 <br>San Miguel de Cozumel, Q.R., Mexico
+    </div>
+    <div class="contactItem phone">
+      <img src="images/phone32.png" alt="mobile phone icon" />
+      <p>+52 987 878 4391</p>
+    </div>
     <div class="contactItem address">
-          <img src="images/location32.png" alt="location marker" />
-          <p>Carretera Chankanaab km 4.5, Carretera Costera Sur, 77600 <br>San Miguel de Cozumel, Q.R., Mexico</div>
+      <img src="images/location32.png" alt="location marker" />
+      <p>Carretera Chankanaab km 4.5, Carretera Costera Sur, 77600 <br>San Miguel de Cozumel, Q.R., Mexico
+    </div>
     <div class="contactItem phone">
       <img src="images/phone32.png" alt="mobile phone icon" />
       <p>+52 987 869 1984</p>
@@ -146,13 +147,14 @@
           alt="facebook icon" /></a>
       <a target="_blank" rel="noreferrer" href="https://www.pinterest.com/"><img src="images/pinterest32.png"
           alt="pinterest icon" /></a>
-      <a target="_blank" rel="noreferrer" href="https://twitter.com//"><img src="images/twitter32.png" alt="twitter icon" /></a>
+      <a target="_blank" rel="noreferrer" href="https://twitter.com//"><img src="images/twitter32.png"
+          alt="twitter icon" /></a>
       <a target="_blank" rel="noreferrer" href="https://www.instagram.com/"><img src="images/instagram32.png"
           alt="instagram icon" /></a>
     </div>
 
     <p>
-      &copy;<span id="current-date"></span> 
+      &copy;<span id="current-date"></span>
     </p>
     <p>
       <small>Last Updated:<span id="last-updated"></span> </small>
