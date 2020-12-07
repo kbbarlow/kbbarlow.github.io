@@ -23,6 +23,15 @@ nav {
   font-weight: bold;
   text-align: center;
 }
+nav button {
+  padding: 10px;
+  margin: 0 5px;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  color: #023047;
+  float: left;
+}
 
 nav ul {
   list-style-type: none;
@@ -47,11 +56,9 @@ nav ul li a:hover{ background-color: rgba(33, 158, 188, 1); color: #fff;}
 nav ul.hide {
   display: none;
 }
-
-
 h1 {
   font-family: 'Sonsie One', cursive;
-  font-size: 1rem;
+  font-size: 2rem;
   margin: 0 5px;
   padding: 0 5px;
   border-bottom: 4px solid #FB8500;
@@ -101,6 +108,15 @@ footer {
   content: "";
   display: table;
   clear: both;
+}
+.herodiv {
+  position: relative;
+}
+
+.hero-ph {
+  margin: 0px auto 20px 0;
+  width: 100%;
+  height: auto;
 }
 
 
