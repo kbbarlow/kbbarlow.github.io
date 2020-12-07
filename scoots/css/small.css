@@ -16,25 +16,25 @@ footer, .weatheralert {
   text-align: center;
   padding: 5px;
 }
-header{
+header {
+  padding: 5px 5px 10px 5px;
   display: flex;
-  justify-content:space-between;
 }
 
 
 nav {
   background-color: #ffffff;
   font-weight: bold;
-  text-align: center;
   
 }
 nav button {
   padding: 10px;
-  margin: 0 5px 20px;
+  margin: -100px 0 5px 20px;
   background-color: transparent;
   border: none;
   font-size: 1.6rem;
   color: #023047;
+  float: right;
   
 }
 
