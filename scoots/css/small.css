@@ -16,10 +16,7 @@ footer, .weatheralert {
   text-align: center;
   padding: 5px;
 }
-header {
-  display: flex;
-  justify-content: space-between;
-}
+
 
 nav {
   background-color: #ffffff;
