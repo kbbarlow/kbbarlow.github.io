@@ -3,7 +3,7 @@ fetch(APIurl)
 .then((response) => response.json())
 .then((jsObject) => {
   console.table(jsObject);
-  document.getElementById('weather').innerHTML = jsObject.weather[0].description;
+  document.getElementById('weather').innerHTML = jsObject.current.weather[0].description;
   document.getElementById('current-temp').innerHTML = jsObject.current.temp + "&#8457;";
   document.getElementById('humidity').innerHTML = jsObject.current.humidity + "&#37;";
   document.getElementById('feels_like').innerHTML = jsObject.current.feels_like + "&#8457;";
