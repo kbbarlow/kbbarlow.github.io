@@ -4,9 +4,9 @@ fetch(APIurl)
 .then((jsObject) => {
   console.table(jsObject)
   document.getElementById('weather').innerHTML = jsObject.weather[0].description;
-  document.getElementById('current-temp').innerHTML = Math.round(t) + "&#8457;";
-  document.getElementById('humidity').innerHTML = jsObject.main.humidity + "&#37;";
-  document.getElementById('feels_like').innerHTML = Math.round(s) + " mph";
+  document.getElementById('current-temp').innerHTML = jsObject.current.temp + "&#8457;";
+  document.getElementById('humidity').innerHTML = jsObject.current.humidity + "&#37;";
+  document.getElementById('feels_like').innerHTML = jsObject.current.feels_like + "&#8457;";
 });
 // fetch(forecastURL)
 // .then((response) => response.json())
