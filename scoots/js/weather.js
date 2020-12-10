@@ -2,19 +2,11 @@ const APIurl ='https://api.openweathermap.org/data/2.5/onecall?lat=20.422984&lon
 fetch(APIurl)
 .then((response) => response.json())
 .then((jsObject) => {
-  let t = parseFloat(jsObject.main.temp);
-  let s = parseFloat(jsObject.wind.speed);
-  console.log(s)
-  let output = "N/A";
+  console.table(jsObject)
   document.getElementById('weather').innerHTML = jsObject.weather[0].description;
   document.getElementById('current-temp').innerHTML = Math.round(t) + "&#8457;";
-  if (t <= 50 && s >= 3) {
-    let f = (35.74 + (0.6215 * t)) - (35.75 * (Math.pow(s, 0.16))) + (0.4275 * (t * (Math.pow(s, 0.16))));
-    output = Math.round(f) + "&#8457;";
-  };
-  document.getElementById("output").innerHTML = output;
   document.getElementById('humidity').innerHTML = jsObject.main.humidity + "&#37;";
-  document.getElementById('speed').innerHTML = Math.round(s) + " mph";
+  document.getElementById('feels_like').innerHTML = Math.round(s) + " mph";
 });
 fetch(forecastURL)
 .then((response) => response.json())
