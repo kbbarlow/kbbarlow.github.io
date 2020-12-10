@@ -161,7 +161,9 @@ footer .cursive {
   box-shadow: 0 5px 15px rgba(2, 48, 71, 0.4);
 }
 .weathersection {
-  background-image: src(../images/sunnyocean320.jpg);
+  background-image: url(../images/sunnyocean320.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 .weather {
   display: grid;
@@ -175,6 +177,7 @@ footer .cursive {
 .weathersummary {
 width: 220px;
 grid-column:1/2;
+background-color: rgba(251, 133, 0, 0.5); color: #fff;
 color: #023047;
 font-size: 1rem;
 margin: 0;
@@ -196,6 +199,7 @@ border-radius: 5px;
   
 }
 .threeday ul{
+  background-color: rgba(251, 133, 0, 0.5); color: #fff;
   box-shadow: 0 5px 15px rgba(2, 48, 71, 0.4);
   border-radius: 5px;
   width: 80px;
