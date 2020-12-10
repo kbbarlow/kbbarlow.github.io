@@ -5,13 +5,14 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-footer, .weatheralert {
+footer {
   background-color: #023047;
   color: white;
   text-align: center;
-  padding: 5px;
+  padding: 20px;
   width: 100%;
-}
+  margin-top: 20px;
+  }
 header {
   padding: 5px 5px 10px 5px;
   display: flex;
@@ -85,13 +86,15 @@ main {
   padding: 10px;
 }
 
-footer {
-  margin-top: 20px;
-  padding: 20px;
-  width: 100%;
-}
+
 footer .cursive {
   font-family: 'Sonsie One', cursive;
+}
+.weatheralert {
+  background-color: #219EBC;
+  color: #fff;
+  margin: 20px auto;
+  padding: 5px;
 }
 
 .calltoaction {
