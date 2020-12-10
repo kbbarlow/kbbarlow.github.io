@@ -84,10 +84,6 @@ h2.emphasized {
   font-size: 1.5rem;
   border-bottom: 4px solid #FB8500;
 }
-footer a {
-  color: #fff;
-}
-
 main {
   max-width: 1000px;
   margin: 0 auto;
@@ -99,6 +95,10 @@ footer {
   padding: 20px;
   width: 100%;
 }
+footer .cursive {
+  font-family: 'Sonsie One', cursive;
+}
+
 .calltoaction {
   position: absolute;
   top: 20px;
