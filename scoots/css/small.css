@@ -160,6 +160,9 @@ footer .cursive {
   border: none;
   box-shadow: 0 5px 15px rgba(2, 48, 71, 0.4);
 }
+.weathersection {
+  background-image: src(../images/sunnyocean320.jpg);
+}
 .weather {
   display: grid;
   grid-template-columns: 75% 1fr;
@@ -167,10 +170,52 @@ footer .cursive {
   width: 320px;
   align-items: center;
   justify-items: center;
+  margin: 0 auto;
+}
+.weathersummary {
+width: 220px;
+grid-column:1/2;
+color: #023047;
+font-size: 1rem;
+margin: 0;
+text-align: center;
+box-shadow: 0 5px 15px rgba(2, 48, 71, 0.4);
+border-radius: 5px;
+}
+.weathersummary h2{
+  width: 100%;
+  padding: 5px;
+  margin: 20px 0 0 ;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+.weathersummary p{
+  margin: 10px 0 20px 0;
+  font-weight: bold;
+  
+}
+.threeday ul{
+  box-shadow: 0 5px 15px rgba(2, 48, 71, 0.4);
+  border-radius: 5px;
+  width: 80px;
+  list-style-type: none;
+ 
+}
+.threeday li img{
+  width:50px;
+  padding: 0;
+  margin:0;
 }
 .threeday {
-  grid-column: 2;
+  grid-column: 2/3;
+  align-items: center;
 }
+.sunnyocean {
+  width: 100%;
+  opacity: 0.8;
+}
+
 .location1, 
 .location2 {
   display: grid;
