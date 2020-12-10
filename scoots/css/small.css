@@ -177,8 +177,7 @@ footer .cursive {
 .weathersummary {
 width: 220px;
 grid-column:1/2;
-background-color: rgba(251, 133, 0, 0.5); color: #fff;
-color: #023047;
+background-color: rgba(175, 175, 175, 0.6);
 font-size: 1rem;
 margin: 0;
 text-align: center;
@@ -199,21 +198,33 @@ border-radius: 5px;
   
 }
 .threeday ul{
-  background-color: rgba(251, 133, 0, 0.5); color: #fff;
+  background-color: rgba(175, 175, 175, 0.6);
+  color: #fff; 
   box-shadow: 0 5px 15px rgba(2, 48, 71, 0.4);
   border-radius: 5px;
   width: 80px;
   list-style-type: none;
- 
+  width: 100%;
+  padding:8px 10px;
+
 }
+.threeday li{
+  height: 24px;
+}
+
+.threeday li.icon {
+  height: 40px;
+}
+
 .threeday li img{
-  width:50px;
+  width:40px;
   padding: 0;
   margin:0;
 }
 .threeday {
   grid-column: 2/3;
   align-items: center;
+  text-align: center;
 }
 .sunnyocean {
   width: 100%;
