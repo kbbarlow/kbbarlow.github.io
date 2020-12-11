@@ -17,13 +17,9 @@
   h1 {
     font-size: 3rem;
   }
-
-  h2 {
-    font-size: 1.5rem;
-  }
 nav {
   float: right;
-  margin: -125px 0 5px 20px;
+  margin: -100px 0 5px 20px;
 }
 .rentals {
   grid-template-columns: 50% 50%;
@@ -84,7 +80,19 @@ margin: 20px 0;
 }
 .location1 img, 
 .location2 img {
-  width: 300px;
-  
+width: 300px;
+}
+.contact {
+display: grid;
+grid-template-columns: 300px 300px;
+width: 600px;
+}
+.social {
+  grid-column: 2;
+  text-align: left;
+  margin: 0 0 0 10px;
+}
+.phone p, .phone img, .address img, .email img, .email p{
+  margin: 10px;
 }
 }
