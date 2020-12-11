@@ -1,17 +1,30 @@
 @media only screen and (min-width: 64rem) {
-
+body {
+  width: 1000px;
+}
+  .herodiv, .footer .weatheralert {
+    width: 1000px;
+  }
   .weathersection {
     background-image: url(../images/sunnyocean1024.jpg);
+    width: 1000px;
   }
 
   .rentals {
+    display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 50% 50%;
-    width: 600px;
+    width: 300px;
     overflow: hidden;
     text-align: center;
   }
   .rentals img {
     grid-column: 2/3;
+  }
+  .rentalArea {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 1000px;
+
   }
 }
