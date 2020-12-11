@@ -39,12 +39,34 @@ nav {
   background-image: url(../images/sunnyocean600.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
+  padding: 20px;
 }
 .weather {
   display: grid;
   grid-template-columns: 75% 1fr;
   grid-template-rows: 1fr;
-  width: 600px;
+  width: 400px;
+}
+.weathersummary {
+  width: 300px;
+  grid-column: 1;
+  grid-row: 1;
+  padding: 7px 0;
+}
+.threeday ul{
+  width: 80px;
+}
+.threeday ul:nth-child(even) {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.threeday {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-row: 1;
+  text-align: center;
+  margin: 0;
 }
 
 .location {
@@ -55,10 +77,10 @@ nav {
 .location1, 
 .location2 {
 grid-template-columns: 50% 50%;
+grid-template-rows: 1fr;
 width: 600px;
-overflow: hidden;
 text-align: center;
-margin: 0;
+margin: 20px 0;
 }
 .location1 img, 
 .location2 img {

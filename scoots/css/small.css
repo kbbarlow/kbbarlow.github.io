@@ -170,14 +170,14 @@ footer .cursive {
 .weather {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 150px;
-  width: 320px;
+  grid-template-rows: 1fr 128px;
   align-items: center;
   justify-items: center;
   margin: 0 auto;
+  width: 320px;
 }
 .weathersummary {
-width: 300px;
+width: 275px;
 background-color: rgba(175, 175, 175, 0.7);
 font-size: 1rem;
 margin: 10px 0;
@@ -188,7 +188,7 @@ border-radius: 5px;
 .weathersummary h2{
   width: 100%;
   padding: 5px;
-  margin: 0 auto ;
+  margin: 0 auto;
   text-align: center;
   font-size: 18px;
   font-weight: bold;
