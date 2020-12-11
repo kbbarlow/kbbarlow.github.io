@@ -10,9 +10,6 @@
   nav ul.hide {
     display: flex;
   }
-  nav ul li a {
-    padding: 8px;
-  }
 
   h1 {
     font-size: 3rem;
@@ -35,7 +32,7 @@ nav {
   background-image: url(../images/sunnyocean600.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
-  padding: 20px;
+  padding:0 0 20px 0;
 }
 .weather {
   display: grid;
