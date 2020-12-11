@@ -2,7 +2,7 @@
   body, main {
     width: 1000px;
   }
- header, .herodiv, footer, .weatheralert, .location{
+ header, .herodiv, footer, .location{
     width: 1000px;
   }
   .weathersection {
@@ -41,4 +41,9 @@ h2 {
 }
 nav ul li a {
   font-size: 1.2rem;
+}
+.threeday ul:nth-child(even) {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
 }

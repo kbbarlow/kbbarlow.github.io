@@ -46,6 +46,9 @@ nav {
   grid-row: 1;
   padding: 7px 0;
 }
+.weathersummary, .threeday ul {
+  background-color: rgba(175, 175, 175, 0.5);
+}
 .threeday ul{
   width: 80px;
 }
