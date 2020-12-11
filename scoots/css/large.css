@@ -3,4 +3,15 @@
   .weathersection {
     background-image: url(../images/sunnyocean1024.jpg);
   }
+
+  .rentals {
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    width: 600px;
+    overflow: hidden;
+    text-align: center;
+  }
+  .rentals img {
+    grid-column: 2/3;
+  }
 }
