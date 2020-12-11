@@ -3,9 +3,6 @@
     max-width: 800px;
     margin: 0 auto;
   }
-  nav ul {
-    display: flex;
-  }
   nav button {
     display: none;
   }
@@ -13,18 +10,19 @@
   nav ul.hide {
     display: flex;
   }
-    
-    header {
-      display: flex;
-      justify-content: space-between;
-    }
-    h1{
-      font-size: 3rem;
-    }
-    h2{
-      font-size: 1rem;
-    }
-  main{
+  nav ul li a {
+    padding: 8px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
     font-size: 1rem;
   }
-    }
+nav {
+  float: right;
+  margin: -125px 0 5px 20px;
+}
+}
