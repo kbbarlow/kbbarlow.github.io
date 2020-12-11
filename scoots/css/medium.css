@@ -18,6 +18,9 @@ nav {
   float: right;
   margin: -100px 0 5px 20px;
 }
+nav ul li a {
+  padding: 8px;
+}
 .rentals {
   grid-template-columns: 50% 50%;
   grid-template-rows: 1fr;
@@ -32,7 +35,7 @@ nav {
   background-image: url(../images/sunnyocean600.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
-  padding:0 0 20px 0;
+  padding:20px 0;
 }
 .weather {
   display: grid;
