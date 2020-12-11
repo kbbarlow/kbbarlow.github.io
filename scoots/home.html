@@ -12,193 +12,172 @@
   <link rel="stylesheet" href="css/small.css">
   <link rel="stylesheet" href="css/medium.css">
   <link rel="stylesheet" href="css/large.css">
-
-
-
 </head>
 
 <body>
+  <div class="weatheralert">
+    <p>Weather alert: <span id="alert"></span><span id="alertdesc"></span></p>
+  </div>
   <header>
-    <section>
       <h1>Scoots</h1>
-      <h3 class="header">Where your next adventure begins</h3>
-    </section>
-    
+      <p class="subhead">Where your next adventure begins</p>
   </header>
   <main>
     <nav class="clearfix">
       <button onclick="toggleMenu()">&#9776;</button>
-        <ul id="primaryNav" class="hide">
-          <li class="active"><a href="home.html">Home</a></li>
-          <li><a href="rentals.html">Rentals</a></li>
-          <li><a href="reservation.html">Reserve</a></li>
-          <li><a href="tours.html">Tours</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    
+      <ul id="primaryNav" class="hide">
+        <li class="active"><a href="home.html">Home</a></li>
+        <li><a href="rentals.html">Rentals</a></li>
+        <li><a href="reservation.html">Reserve</a></li>
+        <li><a href="tours.html">Tours</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
     <div class="herodiv">
       <picture>
-        <source srcset="images/jeepdudes-small.jpg" media="(max-width:450px)" />
-        <source srcset="images/jeepdudes-medium.jpg" media="(max-width:700px)" />
-        <source srcset="images/jeepdudes-large.jpg" media="(max-width:1000px)" />
+        <source srcset="images/jeepdudes-small.jpg" media="(max-width:600px)" />
+        <source srcset="images/jeepdudes-medium.jpg" media="(max-width:1024px)" />
         <img class="hero-ph" src="images/jeepdudes-large.jpg" alt="2 guys standing by a jeep" />
       </picture>
-    <button class="calltoaction">Book Now</button>
-  </div>
+      <a class="button calltoaction">Book Now</a>
+    </div>
     <h2>Rentals</h2>
-    <section class="rentalArea">
-    <section class="rentals">
-    <picture>
-      <source srcset="images/blue-488x350.jpg" media="(max-width:450px)" />
-      <source srcset="images/blue-640x520.jpg" media="(max-width:700px)" />
-      <source srcset="images/blue-800x600.jpg" media="(max-width:1000px)" />
-      <img class="hero-ph" src="images/blue-1950x1140.jpg" alt="light blue one person scooter" />
-    </picture>
-    <div class="info">
-    <h2 class="emphasized">Scooters</h2>
-    <p>Three different types of scooters</p>
-    <p>Our scooters can seat 1 to 2 people</p>
-    <button>Learn More</button>
-  </div>
+    <section class="rentalList">
+      <div class="rentals">
+        <picture>
+          <source srcset="images/blue-488x350.jpg" media="(max-width:600px)" />
+          <source srcset="images/blue-640x520.jpg" media="(max-width:1024px)" />
+          <img src="images/blue-1950x1140.jpg" alt="light blue one person scooter" />
+        </picture>
+        <div class="info">
+          <h2 class="emphasized">Scooters</h2>
+          <p>Three different types of scooters</p>
+          <p>Our scooters can seat 1 to 2 people</p>
+          <a class="button">Learn More</a>
+        </div>
+      </div>
+      <div class="rentals">
+        <picture>
+          <source srcset="images/greenatv488x350.png" media="(max-width:600px)" />
+          <source srcset="images/greenatv640x520.png" media="(max-width:1024px)" />
+          <img src="images/greenatv1950x1140.png" alt="green 2 seater ATV" />
+        </picture>
+        <div class="info">
+          <h2 class="emphasized">ATVs</h2>
+          <p>For your off-road adventures</p>
+          <p>We have two person ATVs avaialble</p>
+          <a class="button">Learn More</a>
+        </div>
+      </div>
+      <div class="rentals">
+        <picture>
+          <source srcset="images/4doorjeep488x350.png" media="(max-width:600px)" />
+          <source srcset="images/4doorjeep700x520.png" media="(max-width:1024px)" />
+          <img src="images/4doorjeep1950x1140.png" alt="white four door jeep with the roof off" />
+        </picture>
+        <div class="info">
+          <h2 class="emphasized">Jeeps</h2>
+          <p>Two or Four Door jeeps</p>
+          <p>Seats 4 or 5 people</p>
+          <a class="button">Learn More</a>
+        </div>
+      </div>
     </section>
-    <section class="rentals">
-    <picture>
-      <source srcset="images/greenatv488x350.png" media="(max-width:450px)" />
-      <source srcset="images/greenatv640x520.png" media="(max-width:700px)" />
-      <source srcset="images/greenatv800x600.png" media="(max-width:1000px)" />
-      <img class="hero-ph" src="images/greenatv1950x1140.png" alt="green 2 seater ATV" />
-    </picture>
-    <div class="info">
-    <h2 class="emphasized">ATVs</h2>
-    <p>For your off-road adventures</p>
-    <p>We have two person ATVs avaialble</p>
-    <button>Learn More</button>
-  </div>
-  </section>
-    <section class="rentals">
-    <picture>
-      <source srcset="images/4doorjeep488x350.png" media="(max-width:450px)" />
-      <source srcset="images/4doorjeep700x520.png" media="(max-width:700px)" />
-      <source srcset="images/4doorjeep800x600.png" media="(max-width:1000px)" />
-      <img class="hero-ph" src="images/4doorjeep1950x1140.png" alt="white four door jeep with the roof off" />
-    </picture>
-    <div class="info">
-    <h2 class="emphasized">Jeeps</h2>
-    <p>Two or Four Door jeeps</p>
-    <p>Seats 4 or 5 people</p>
-    <button>Learn More</button>
-  </div>
-  </section>
-</section>
-  <h2>Weather</h2>
-  <section class="weathersection">
-  <section class="weather">
-    <section class="weathersummary">
-      <h2>Today's Weather</h2>
-      <img id="icon">
-      <p>Currently: <span id="weather"></span> </p>
-      
-      <p>Current Temp: <span id="current-temp"></span></p>
-      
-      <p>Feels Like: <span id="feels_like"></span></p>
-      
-      <p>Humidity: <span id="humidity"></span></p>
-      
-    </section>
-    <div class="threeday">
-      <ul>
+    <h2>Weather</h2>
+    <section class="weather">
+      <div class="weathersummary">
+        <h2>Today's Weather</h2>
+        <img id="icon">
+        <p>Currently: <span id="weather"></span> </p>
+        <p>Current Temp: <span id="current-temp"></span></p>
+        <p>Feels Like: <span id="feels_like"></span></p>
+        <p>Humidity: <span id="humidity"></span></p>
+      </div>
+      <div class="threeday">
+        <ul>
           <li><span id="dayofweek1"></span></li>
-          <li class="icon"><img id="icon1" src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true" alt="unknown" /></li>
+          <li class="icon"><img id="icon1"
+              src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
+              alt="unknown" /></li>
           <li><span id="forecast1"></span>&#8457;</li>
         </ul>
-      <ul>
+        <ul>
           <li><span id="dayofweek2"></span></li>
           <li class="icon"><img id="icon2"
               src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
               alt="unknown"></li>
           <li><span id="forecast2"></span>&#8457;</li>
-      </ul>
-      <ul>
+        </ul>
+        <ul>
           <li><span id="dayofweek3"></span></li>
           <li class="icon"><img id="icon3"
               src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
               alt="unknown"></li>
           <li><span id="forecast3"></span>&#8457;</li>
-      </ul>
-    </div>
-  </section>
-  </section>
-  <div class="weatheralert">
-    <p>Weather alert: <span id="alert"></span><span id="alertdesc"></span></p>
-  </div>
-  <h2>Two Locations to Serve you</h2>
-  <section class="location">
-    
-    <div class="location1">
-    <img src="images/Storefront 1.jpg" alt="scoots store 1 storefront" />
-    <img src="images/Playa Del Carmen.png" alt="scoots store 2 storefront" />
-    </div>
-    <div class="location2">
-    <img src="images/Storefront 2.jpg" alt="scoots store 2 storefront" />
-    <img src="images/Puerta Maya.png" alt="scoots store 2 storefront" />
-  </div>
-</section>
-
+        </ul>
+      </div>
+    </section>
+    <h2>Two Locations to Serve you</h2>
+    <section class="location">
+      <div class="location1">
+        <img src="images/Storefront 1.jpg" alt="scoots store 1 storefront" />
+        <img src="images/Playa Del Carmen.png" alt="scoots store 2 storefront" />
+      </div>
+      <div class="location2">
+        <img src="images/Storefront 2.jpg" alt="scoots store 2 storefront" />
+        <img src="images/Puerta Maya.png" alt="scoots store 2 storefront" />
+      </div>
+    </section>
   </main>
   <footer>
     <h2 class="cursive">Scoots</h2>
     <div class="contact">
       <div class="contact1">
-    <h2>Playa del Carmen Location</h2>
-    <div class="contactItem address">
-      <img src="images/location32.png" alt="location marker" />
-      <p>Av. Rafael E. Melgar, Centro, 77600 <br>San Miguel de Cozumel, Q.R., Mexico
+        <h3>Playa del Carmen Location</h3>
+        <div class="contactItem address">
+          <img src="images/location32.png" alt="location marker" />
+          <p>Av. Rafael E. Melgar, Centro, 77600 <br>San Miguel de Cozumel, Q.R., Mexico
+        </div>
+        <div class="contactItem phone">
+          <img src="images/phone32.png" alt="mobile phone icon" />
+          <p>+52 987 878 4391</p>
+        </div>
+      </div>
+      <div class="contact1">
+        <h3>Puerta Maya Location</h3>
+        <div class="contactItem address">
+          <img src="images/location32.png" alt="location marker" />
+          <p>Carretera Costera Sur, 77600 <br>San Miguel de Cozumel, Q.R., Mexico
+        </div>
+        <div class="contactItem phone">
+          <img src="images/phone32.png" alt="mobile phone icon" />
+          <p>+52 987 869 1984</p>
+        </div>
+      </div>
+      <div class="contactItem email">
+        <img src="images/email32.png" alt="email icon" />
+        <p>miguel@scootscozumel.com</p>
+      </div>
+      <div class="social">
+        <a target="_blank" rel="noreferrer" href="https://www.facebook.com/"><img src="images/facebook32.png"
+            alt="facebook icon" /></a>
+        <a target="_blank" rel="noreferrer" href="https://www.pinterest.com/"><img src="images/pinterest32.png"
+            alt="pinterest icon" /></a>
+        <a target="_blank" rel="noreferrer" href="https://twitter.com//"><img src="images/twitter32.png"
+            alt="twitter icon" /></a>
+        <a target="_blank" rel="noreferrer" href="https://www.instagram.com/"><img src="images/instagram32.png"
+            alt="instagram icon" /></a>
+      </div>
     </div>
-    <div class="contactItem phone">
-      <img src="images/phone32.png" alt="mobile phone icon" />
-      <p>+52 987 878 4391</p>
-    </div>
-  </div>
-  <div class="contact1">
-    <h2>Puerta Maya Location</h2>
-    <div class="contactItem address">
-      <img src="images/location32.png" alt="location marker" />
-      <p>Carretera Costera Sur, 77600 <br>San Miguel de Cozumel, Q.R., Mexico
-    </div>
-  
-    <div class="contactItem phone">
-      <img src="images/phone32.png" alt="mobile phone icon" />
-      <p>+52 987 869 1984</p>
-    </div>
-  </div>
-    <div class="contactItem email">
-      <img src="images/email32.png" alt="email icon" />
-      <p>miguel@scootscozumel.com</p>
-    </div>
-    <div class="social">
-      <a target="_blank" rel="noreferrer" href="https://www.facebook.com/"><img src="images/facebook32.png"
-          alt="facebook icon" /></a>
-      <a target="_blank" rel="noreferrer" href="https://www.pinterest.com/"><img src="images/pinterest32.png"
-          alt="pinterest icon" /></a>
-      <a target="_blank" rel="noreferrer" href="https://twitter.com//"><img src="images/twitter32.png"
-          alt="twitter icon" /></a>
-      <a target="_blank" rel="noreferrer" href="https://www.instagram.com/"><img src="images/instagram32.png"
-          alt="instagram icon" /></a>
-    </div>
-  </div>
-
     <p>
       &copy;<span id="current-date"></span>
     </p>
     <p>
       <small>Last Updated:<span id="last-updated"></span> </small>
     </p>
-    
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <script src="js/common.js"></script>
   <script src="js/weather.js"></script>
 </body>
-
 </html>

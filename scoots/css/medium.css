@@ -1,4 +1,4 @@
-@media only screen and (min-width:37.5em) {
+@media only screen and (min-width:37.5em) { /* everything over 600px */
   body {
     max-width: 800px;
     margin: 0 auto;
@@ -21,12 +21,11 @@ nav {
 nav ul li a {
   padding: 8px;
 }
-.rentals {
+.rentalList {
   grid-template-columns: 50% 50%;
   grid-template-rows: 1fr;
   width: 600px;
   overflow: hidden;
-  text-align: center;
 }
 .rentals img {
   grid-column: 2/3;

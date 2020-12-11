@@ -1,6 +1,6 @@
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 64rem) {  /* everything over 1024px */
   body, main {
-    width: 1000px;
+    max-width: 1200px;
   }
  header, .herodiv, footer, .location{
     width: 1000px;
@@ -10,6 +10,9 @@
     width: 1000px;
     padding: 20px 0;
     margin: 0;
+  }
+  .weatheralert {
+    width: 100%;
   }
 
   .rentals {
@@ -21,7 +24,7 @@
   .rentals img {
     grid-column: 2/3;
   }
-  .rentalArea {
+  .rentalList {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 1000px;
