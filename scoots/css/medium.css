@@ -19,10 +19,50 @@
   }
 
   h2 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 nav {
   float: right;
   margin: -125px 0 5px 20px;
+}
+.rentals {
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;
+  width: 600px;
+  overflow: hidden;
+  text-align: center;
+}
+.rentals img {
+  grid-column: 2/3;
+}
+.weathersection {
+  background-image: url(../images/sunnyocean600.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.weather {
+  display: grid;
+  grid-template-columns: 75% 1fr;
+  grid-template-rows: 1fr;
+  width: 600px;
+}
+
+.location {
+  width: 600px;
+  align-items: center;
+  margin: 0 auto;
+}
+.location1, 
+.location2 {
+grid-template-columns: 50% 50%;
+width: 600px;
+overflow: hidden;
+text-align: center;
+margin: 0;
+}
+.location1 img, 
+.location2 img {
+  width: 300px;
+  
 }
 }
