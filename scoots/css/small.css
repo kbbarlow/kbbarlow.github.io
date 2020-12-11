@@ -92,8 +92,8 @@ footer .cursive {
 .weatheralert {
   background-color: #219EBC;
   color: #fff;
-  margin: 20px auto;
-  padding: 5px;
+  margin: 0 auto;
+  padding: 10px;
 }
 
 .calltoaction {

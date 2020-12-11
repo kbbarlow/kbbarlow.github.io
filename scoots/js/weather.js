@@ -4,7 +4,6 @@ fetch(APIurl)
 .then((jsObject) => {
   console.log(jsObject);
   const descipt = jsObject.current.weather[0].description;
-  console.log(jsObject);
   const image ='https://openweathermap.org/img/wn/' + jsObject.current.weather[0].icon + '@2x.png';
   document.getElementById('icon').setAttribute('alt', descipt);
   document.getElementById('icon').setAttribute('src', image);
@@ -23,4 +22,6 @@ fetch(APIurl)
     document.getElementById(`icon${day+1}`).setAttribute('src', imagesrc);
     document.getElementById(`icon${day+1}`).setAttribute('alt', desc);
   }
+  document.getElementById('alert').innerHTML = jsObject.alerts.event;
+  document.getElementById('alertdesc').innerHTML = jsObject.alerts.description;
 });
