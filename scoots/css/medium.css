@@ -1,7 +1,10 @@
-@media only screen and (min-width:37.5em) { /* everything over 600px */
+@media only screen and (min-width:37.5em) {
+
+  /* everything over 600px */
   body {
     max-width: 1024px;
   }
+
   nav button {
     display: none;
   }
@@ -13,120 +16,127 @@
   header h1 {
     font-size: 2.5rem;
   }
-nav {
-  float: right;
-  margin: -88px 0 5px 20px;
-}
-nav ul li a {
-  padding: 8px;
-}
 
-header {
-  max-width: 225px;
-}
+  nav {
+    float: right;
+    margin: -88px 0 5px 20px;
+  }
 
-.subhead {
-  font-size: .8rem;
-}
+  nav ul li a {
+    padding: 8px;
+  }
 
-h2 {
-  font-size: 1.75rem;
-  margin: 50px 10px 30px;
-}
+  header {
+    max-width: 225px;
+  }
 
-h2.emphasized {
-  padding: 5px 10px;
-  font-size: 1.75rem;
-}
+  .subhead {
+    font-size: .8rem;
+  }
 
-.button {
-  font-size: 1rem;
-}
+  h2 {
+    font-size: 1.75rem;
+    margin: 50px 10px 30px;
+  }
 
-.calltoaction {
-  font-weight: bold;
-  top: 40px;
-  left: 40px;
-  font-size: 1.25rem;
-  padding: 15px 25px;
-}
+  h2.emphasized {
+    padding: 5px 10px;
+    font-size: 1.75rem;
+  }
 
-.rentals {
-  display: grid;
-  max-width: 1024px;
-  grid-template-columns: 60% 40%;
-  margin: 0 16px 30px;
-  padding: 15px 0 30px;
-}
+  .button {
+    font-size: 1rem;
+  }
 
-.rentals p {
-  font-size: 1rem;
-}
+  .calltoaction {
+    font-weight: bold;
+    top: 40px;
+    left: 40px;
+    font-size: 1.25rem;
+    padding: 15px 25px;
+  }
 
-.weather {
-  background: url(../images/sunnyocean600.jpg) center/cover no-repeat;
-  grid-template-columns: 75% 1fr;
-  grid-template-rows: 1fr;
-  margin-bottom: 60px;
-}
+  .rentals {
+    display: grid;
+    max-width: 1024px;
+    grid-template-columns: 60% 40%;
+    margin: 0 16px 30px;
+    padding: 15px 0 30px;
+  }
 
-/* .weather {
-  padding: 30px 15px 10px;
-} */
+  .rentals p {
+    font-size: 1rem;
+  }
 
-.weathersummary {
-  width: 300px;
-  grid-column: 1;
-  grid-row: 1;
-  padding: 7px 0;
-}
-.weathersummary, .threeday ul {
-  background-color: rgba(175, 175, 175, 0.5);
-}
-.threeday ul{
-  width: 80px;
-}
-.threeday ul:nth-child(even) {
-  margin-top: 2px;
-  margin-bottom: 2px;
-}
-.threeday {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-row: 1;
-  text-align: center;
-  margin: 0;
-}
+  .weather {
+    background: url(../images/sunnyocean600.jpg) center/cover no-repeat;
+    grid-template-columns: 1fr 30% 10% 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 60px;
+    grid-gap: 15px;
+    padding-bottom: 30px;
+  }
 
-.location {
-  width: 600px;
-  align-items: center;
-  margin: 0 auto;
-}
-.location1, 
-.location2 {
-grid-template-columns: 50% 50%;
-grid-template-rows: 1fr;
-width: 600px;
-text-align: center;
-margin: 20px 0;
-}
-.location1 img, 
-.location2 img {
-width: 300px;
-}
-.contact {
-display: grid;
-grid-template-columns: 300px 300px;
-width: 600px;
-}
-.social {
-  grid-column: 2;
-  text-align: left;
-  margin: 0 0 0 10px;
-}
-.phone p, .phone img, .address img, .email img, .email p{
-  margin: 10px;
-}
+  .weathersummary {
+    justify-self: stretch;
+    grid-column: 2;
+    grid-row: 1;
+    padding: 55px 0;
+  }
+
+  .weathersummary,
+  .threeday ul {
+    background-color: rgba(175, 175, 175, 0.5);
+  }
+
+  .threeday {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .location {
+    display: grid;
+    justify-items: center;
+    margin-bottom: 40px;
+  }
+
+  .location1,
+  .location2 {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    width: 100%;
+    max-width: 768px;
+    margin: 20px 0;
+  }
+
+  footer h2.cursive {
+    margin-top: 20px;
+  }
+
+  .contact {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-width: 600px;
+  }
+
+  .contact h3 {
+    text-align: left;
+    padding-left: 35px;
+  }
+
+  .social {
+    grid-column: 2;
+    text-align: left;
+    margin: 0 0 0 10px;
+  }
+
+  .phone p,
+  .phone img,
+  .address img,
+  .email img,
+  .email p {
+    margin: 10px;
+  }
 }
