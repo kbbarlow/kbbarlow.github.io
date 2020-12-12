@@ -1,7 +1,6 @@
 @media only screen and (min-width:37.5em) { /* everything over 600px */
   body {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 1024px;
   }
   nav button {
     display: none;
@@ -11,37 +10,70 @@
     display: flex;
   }
 
-  h1 {
-    font-size: 3rem;
+  header h1 {
+    font-size: 2.5rem;
   }
 nav {
   float: right;
-  margin: -100px 0 5px 20px;
+  margin: -88px 0 5px 20px;
 }
 nav ul li a {
   padding: 8px;
 }
-.rentalList {
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 1fr;
-  width: 600px;
-  overflow: hidden;
+
+header {
+  max-width: 225px;
 }
-.rentals img {
-  grid-column: 2/3;
+
+.subhead {
+  font-size: .8rem;
 }
-.weathersection {
-  background-image: url(../images/sunnyocean600.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  padding:20px 0;
+
+h2 {
+  font-size: 1.75rem;
+  margin: 50px 10px 30px;
 }
-.weather {
+
+h2.emphasized {
+  padding: 5px 10px;
+  font-size: 1.75rem;
+}
+
+.button {
+  font-size: 1rem;
+}
+
+.calltoaction {
+  font-weight: bold;
+  top: 40px;
+  left: 40px;
+  font-size: 1.25rem;
+  padding: 15px 25px;
+}
+
+.rentals {
   display: grid;
+  max-width: 1024px;
+  grid-template-columns: 60% 40%;
+  margin: 0 16px 30px;
+  padding: 15px 0 30px;
+}
+
+.rentals p {
+  font-size: 1rem;
+}
+
+.weather {
+  background: url(../images/sunnyocean600.jpg) center/cover no-repeat;
   grid-template-columns: 75% 1fr;
   grid-template-rows: 1fr;
-  width: 400px;
+  margin-bottom: 60px;
 }
+
+/* .weather {
+  padding: 30px 15px 10px;
+} */
+
 .weathersummary {
   width: 300px;
   grid-column: 1;
