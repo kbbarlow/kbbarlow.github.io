@@ -314,4 +314,23 @@ footer h2.cursive {
 }
 .info {
 margin: 20px;
+padding-bottom: 20px;
+}
+.back {
+  margin: 20px 0 0 20px;
+  display: inline-block;
+  font-size: .8rem;
+  background-color: rgba(33, 158, 188, 1);
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: none;
+}
+.specHero {
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto; 
+}
+.specHero img {
+  width: 100%;
 }
