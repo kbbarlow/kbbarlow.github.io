@@ -1,4 +1,4 @@
-const request = 'data/pricing.json';
+const request = 'https://kbbarlow.github.io/scoots/data/pricing.json';
 fetch(request)
   .then((response) => response.json())
   .then((jsObject) => {
