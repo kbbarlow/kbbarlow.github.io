@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,8 +19,8 @@
     <p>Weather alert: <span id="alert"></span><span id="alertdesc"></span></p>
   </div>
   <header>
-      <h1>Scoots</h1>
-      <p class="subhead">Where your next adventure begins</p>
+    <h1>Scoots</h1>
+    <p class="subhead">Where your next adventure begins</p>
   </header>
   <main>
     <nav class="clearfix">
@@ -52,9 +51,25 @@
         </picture>
         <div class="info">
           <h2 class="emphasized">Honda Metro</h2>
-          <p>Lolly gagging</p>
           <p>Seats 1</p>
-          <p><span></span></p>
+          <table class="pricing">
+            <tr>
+              <th>Reservation</th>
+              <th>Walk-in</th>
+            <tr>
+              <td>Half Day</td>
+              <td>Full Day</td>
+              <td>Half Day</td>
+              <td>Full Day</td>
+            </tr>
+            <tr>
+              <td id="rhalfday1"></td>
+              <td id="rfullday1"></td>
+              <td id="whalfday1"></td>
+              <td id="wfullday1"></td>
+            </tr>
+
+          </table>
           <a class="button">Book</a>
         </div>
       </div>
@@ -66,9 +81,25 @@
         </picture>
         <div class="info">
           <h2 class="emphasized">Honda Dio</h2>
-          <p>Bluesteel</p>
           <p>2 people max</p>
-          <p><span></span></p>
+          <table class="pricing">
+            <tr>
+              <th>Reservation</th>
+              <th>Walk-in</th>
+            <tr>
+              <td>Half Day</td>
+              <td>Full Day</td>
+              <td>Half Day</td>
+              <td>Full Day</td>
+            </tr>
+            <tr>
+              <td id="rhalfday2"></td>
+              <td id="rfullday2"></td>
+              <td id="whalfday2"></td>
+              <td id="wfullday2"></td>
+            </tr>
+
+          </table>
           <a class="button">Book</a>
         </div>
       </div>
@@ -80,9 +111,25 @@
         </picture>
         <div class="info">
           <h2 class="emphasized">Honda PCX150</h2>
-          <p>Red Fury</p>
           <p>Seats 2</p>
-          <p><span></span></p>
+          <table class="pricing">
+            <tr>
+              <th>Reservation</th>
+              <th>Walk-in</th>
+            <tr>
+              <td>Half Day</td>
+              <td>Full Day</td>
+              <td>Half Day</td>
+              <td>Full Day</td>
+            </tr>
+            <tr>
+              <td id="rhalfday3"></td>
+              <td id="rfullday3"></td>
+              <td id="whalfday3"></td>
+              <td id="wfullday3"></td>
+            </tr>
+
+          </table>
           <a class="button">Book</a>
         </div>
       </div>
@@ -96,9 +143,24 @@
         </picture>
         <div class="info">
           <h2 class="emphasized">Honda Pioneer ATV</h2>
-          <p>For your off-road adventures</p>
-          <p>4 people max</p>
-          <p><span></span></p>
+          <p>4 people max</p><table class="pricing">
+            <tr>
+              <th>Reservation</th>
+              <th>Walk-in</th>
+            <tr>
+              <td>Half Day</td>
+              <td>Full Day</td>
+              <td>Half Day</td>
+              <td>Full Day</td>
+            </tr>
+            <tr>
+              <td id="rhalfday4"></td>
+              <td id="rfullday4"></td>
+              <td id="whalfday4"></td>
+              <td id="wfullday4"></td>
+            </tr>
+
+          </table>
           <a class="button">Book</a>
         </div>
       </div>
@@ -110,9 +172,25 @@
         </picture>
         <div class="info">
           <h2 class="emphasized">Jeep Wrangler</h2>
-          <p>2 door</p>
-          <p>Seats up to 4</p>
-          <p><span></span></p>
+          <p>2 door / Seats up to 4</p>
+          <table class="pricing">
+            <tr>
+              <th>Reservation</th>
+              <th>Walk-in</th>
+            <tr>
+              <td>Half Day</td>
+              <td>Full Day</td>
+              <td>Half Day</td>
+              <td>Full Day</td>
+            </tr>
+            <tr>
+              <td id="rhalfday5"></td>
+              <td id="rfullday5"></td>
+              <td id="whalfday5"></td>
+              <td id="wfullday5"></td>
+            </tr>
+
+          </table>
           <a class="button">Book</a>
         </div>
       </div>
@@ -125,61 +203,79 @@
         <div class="info">
           <h2 class="emphasized">Jeep Wrangler </h2>
           <p>4 door with a/c</p>
-          <p>Seats 4 or 5 people</p>
-          <p><span></span></p>
+          <p>4 door with a/c / Seats 4 or 5 people</p>
+          <table class="pricing">
+            <tr>
+              <th>Reservation</th>
+              <th>Walk-in</th>
+            <tr>
+              <td>Half Day</td>
+              <td>Full Day</td>
+              <td>Half Day</td>
+              <td>Full Day</td>
+            </tr>
+            <tr>
+              <td id="rhalfday6"></td>
+              <td id="rfullday6"></td>
+              <td id="whalfday6"></td>
+              <td id="wfullday6"></td>
+            </tr>
+
+          </table>
           <a class="button">Book</a>
         </div>
       </div>
     </section>
-<footer>
-  <h2 class="cursive">Scoots</h2>
-  <div class="contact">
-    <div class="contact1">
-      <h3>Playa del Carmen Location</h3>
-      <div class="contactItem address">
-        <img src="images/location32.png" alt="location marker" />
-        <p>Av. Rafael E. Melgar, Centro, 77600 <br>San Miguel de Cozumel, Q.R., Mexico
+    <footer>
+      <h2 class="cursive">Scoots</h2>
+      <div class="contact">
+        <div class="contact1">
+          <h3>Playa del Carmen Location</h3>
+          <div class="contactItem address">
+            <img src="images/location32.png" alt="location marker" />
+            <p>Av. Rafael E. Melgar, Centro, 77600 <br>San Miguel de Cozumel, Q.R., Mexico
+          </div>
+          <div class="contactItem phone">
+            <img src="images/phone32.png" alt="mobile phone icon" />
+            <p>+52 987 878 4391</p>
+          </div>
+        </div>
+        <div class="contact1">
+          <h3>Puerta Maya Location</h3>
+          <div class="contactItem address">
+            <img src="images/location32.png" alt="location marker" />
+            <p>Carretera Costera Sur, 77600 <br>San Miguel de Cozumel, Q.R., Mexico
+          </div>
+          <div class="contactItem phone">
+            <img src="images/phone32.png" alt="mobile phone icon" />
+            <p>+52 987 869 1984</p>
+          </div>
+        </div>
+        <div class="contactItem email">
+          <img src="images/email32.png" alt="email icon" />
+          <p>miguel@scootscozumel.com</p>
+        </div>
+        <div class="social">
+          <a target="_blank" rel="noreferrer" href="https://www.facebook.com/"><img src="images/facebook32.png"
+              alt="facebook icon" /></a>
+          <a target="_blank" rel="noreferrer" href="https://www.pinterest.com/"><img src="images/pinterest32.png"
+              alt="pinterest icon" /></a>
+          <a target="_blank" rel="noreferrer" href="https://twitter.com//"><img src="images/twitter32.png"
+              alt="twitter icon" /></a>
+          <a target="_blank" rel="noreferrer" href="https://www.instagram.com/"><img src="images/instagram32.png"
+              alt="instagram icon" /></a>
+        </div>
       </div>
-      <div class="contactItem phone">
-        <img src="images/phone32.png" alt="mobile phone icon" />
-        <p>+52 987 878 4391</p>
-      </div>
-    </div>
-    <div class="contact1">
-      <h3>Puerta Maya Location</h3>
-      <div class="contactItem address">
-        <img src="images/location32.png" alt="location marker" />
-        <p>Carretera Costera Sur, 77600 <br>San Miguel de Cozumel, Q.R., Mexico
-      </div>
-      <div class="contactItem phone">
-        <img src="images/phone32.png" alt="mobile phone icon" />
-        <p>+52 987 869 1984</p>
-      </div>
-    </div>
-    <div class="contactItem email">
-      <img src="images/email32.png" alt="email icon" />
-      <p>miguel@scootscozumel.com</p>
-    </div>
-    <div class="social">
-      <a target="_blank" rel="noreferrer" href="https://www.facebook.com/"><img src="images/facebook32.png"
-          alt="facebook icon" /></a>
-      <a target="_blank" rel="noreferrer" href="https://www.pinterest.com/"><img src="images/pinterest32.png"
-          alt="pinterest icon" /></a>
-      <a target="_blank" rel="noreferrer" href="https://twitter.com//"><img src="images/twitter32.png"
-          alt="twitter icon" /></a>
-      <a target="_blank" rel="noreferrer" href="https://www.instagram.com/"><img src="images/instagram32.png"
-          alt="instagram icon" /></a>
-    </div>
-  </div>
-  <p>
-    &copy;<span id="current-date"></span>
-  </p>
-  <p>
-    <small>Last Updated:<span id="last-updated"></span> </small>
-  </p>
-</footer>
-<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-<script src="js/common.js"></script>
-<script src="js/rental.js"></script>
+      <p>
+        &copy;<span id="current-date"></span>
+      </p>
+      <p>
+        <small>Last Updated:<span id="last-updated"></span> </small>
+      </p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/rental.js"></script>
 </body>
+
 </html>

@@ -2,11 +2,11 @@ const request = 'data/pricing.json';
 fetch(request)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
-    document.getElementById('current-temp').textContent = jsObject.main.temp;
-    const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';
-    const desc = jsObject.weather[0].description;
-    document.getElementById('imagesrc').textContent = imagesrc;
-    document.getElementById('icon').setAttribute('src', imagesrc);
-    document.getElementById('icon').setAttribute('alt', desc);
+    const rentals = jsonObject['rentals'];
+    for (let i = -1; i < rentals.length; i++ ) {
+    document.getElementById(`rhalfday${i+1}`).innerhtml = jsObject.rentals[0].rhalfday;
+    document.getElementById(`rfullday${i+1}`).innerhtml = jsObject.rentals[0].rfullday;
+    document.getElementById(`whalfday${i+1}`).innerhtml = jsObject.rentals[0].whalfday;
+    document.getElementById(`wfullday${i+1}`).innerhtml = jsObject.rentals[0].wfullday;
+    }
   });
