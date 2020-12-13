@@ -5,9 +5,9 @@ fetch(request)
     console.log(jsObject);
     const rentals = jsObject['rentals'];
     for (let i = 0; i < rentals.length; i++ ) {
-    document.getElementById(`rhalfday${i+1}`).textcontent = jsObject.rentals[i].rhalfday;
-    document.getElementById(`rfullday${i+1}`).textcontent = jsObject.rentals[i].rfullday;
-    document.getElementById(`whalfday${i+1}`).textcontent = jsObject.rentals[i].whalfday;
-    document.getElementById(`wfullday${i+1}`).textcontent = jsObject.rentals[i].wfullday;
+      document.getElementById(`rhalfday${i+1}`).innerHTML = rentals[i].rhalfday;
+      document.getElementById(`rfullday${i+1}`).innerHTML = rentals[i].rfullday;
+      document.getElementById(`whalfday${i+1}`).innerHTML = rentals[i].whalfday;
+      document.getElementById(`wfullday${i+1}`).innerHTML = rentals[i].wfullday;
     }
   });
