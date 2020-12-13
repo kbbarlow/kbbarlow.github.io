@@ -93,6 +93,9 @@ h2.emphasized {
   line-height: 2.5rem;
   border-bottom: 4px solid #FB8500;
 }
+a {
+  text-decoration: none;
+}
 
 .weatheralert {
   background-color: #219EBC;
