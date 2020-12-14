@@ -2,6 +2,7 @@ const request = 'https://kbbarlow.github.io/scoots/data/pricing.json';
 fetch(request)
   .then((response) => response.json())
   .then((jsObject) => {
+    const rentals = jsObject['rentals'];
     if (document.getElementById("metro")){
       document.getElementById("whalfday1").innerHTML = rentals[0].whalfday;
       document.getElementById("wfullday1").innerHTML = rentals[0].wfullday;

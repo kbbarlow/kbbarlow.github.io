@@ -92,9 +92,11 @@ h2.emphasized {
   font-size: 1.5rem;
   line-height: 2.5rem;
   border-bottom: 4px solid #FB8500;
+  
 }
 a {
   text-decoration: none;
+  color: #023047;
 }
 
 .weatheralert {
@@ -113,6 +115,11 @@ a {
   border-radius: 5px;
   border: none;
 }
+.moreinfo {
+  border: 1px solid #023047;
+  padding: 8px 15px;
+  border-radius: 5px;
+} 
 
 .calltoaction {
   position: absolute;
