@@ -37,120 +37,165 @@
         <img class="hero-ph" src="images/scooters-large.jpg" alt="2 guys riding scooters" />
       </picture>
     </div>
-<form method="get" action="thanks.html">
-  <fieldset>
-    <legend>Renter's Information</legend>
-    <label class="top" for="fname"> Full Name* <input type="text" id="fname" name="fullname" placeholder="Jane Doe" pattern="[\sA-Za-z]{5,}" required></label>
-    <label class="top" for="email"> Email* <input type="email" id="email" name="email" placeholder="someone@gmail.com"required></label>
-    <label class="top"for="phone"> Phone* <input type="tel"  id="phone" name="phone" placeholder="1235551234" required></label>
-    <label class="top" for="adr">Address* <input type="text" id="adr" name="address" placeholder="123 Lalaland"required></label>
-    <label class="top" for="city"> City* <input type="text" id="city" name="city" placeholder="Lehi" required></label>
-    <label class="top" for="state"> State* <input type="text" id="state" name="state" placeholder="Utah" required></label>
-    <label class="top" for="zip"> Zip* <input type="text" id="zip" name="zip" placeholder="84043" required></label>
-    <label class="top" for="country"> Country* <input type="text" id="country" name="Country" placeholder="United States" required></label>
-  </fieldset>
-  <fieldset>
-    <legend>Rental Information</legend>
-    <label class="top" for="date">When would you like to rent? <input type="date" id="date" name="date"> </label>
-    <label class="top">Rental type <input list="typeofstorm" name="stormtype">
-      <datalist id="typeofstorm">
-        <option value="Metro Scooter-Seats 1"></option>
-        <option value="Honda Dio Scooter-Seats 2"></option>
-        <option value="Honda PCX150 Scooter-Seats 2"></option>
-        <option value="Honda Pioneer ATV- Seats 4"></option>
-        <option value="2 Door Jeep Wrangler- Seats 4"></option>
-        <option value="4 Door Jeep Wrangler- Seats 5"></option>
+    <form method="get" action="thanks.html">
+      <fieldset>
+        <legend>Renter's Information</legend>
+        <label class="top" for="fname"> Full Name* <input type="text" id="fname" name="fullname" placeholder="Jane Doe"
+            pattern="[\sA-Za-z]{5,}" required></label>
+        <label class="top" for="email"> Email* <input type="email" id="email" name="email"
+            placeholder="someone@gmail.com" required></label>
+        <label class="top" for="phone"> Phone* <input type="tel" id="phone" name="phone" placeholder="1235551234"
+            required></label>
+        <label class="top" for="adr">Address* <input type="text" id="adr" name="address" placeholder="123 Lalaland"
+            required></label>
+        <label class="top" for="city"> City* <input type="text" id="city" name="city" placeholder="Lehi"
+            required></label>
+        <label class="top" for="state"> State* <input type="text" id="state" name="state" placeholder="Utah"
+            required></label>
+        <label class="top" for="zip"> Zip* <input type="text" id="zip" name="zip" placeholder="84043" required></label>
+        <label class="top" for="country"> Country/Province* <input type="text" id="country" name="Country"
+            placeholder="United States" required></label>
+      </fieldset>
+      <fieldset>
+        <legend>Rental Information</legend>
+        <label class="top" for="date">When would you like to rent? <input type="date" id="date" name="date"> </label>
+        <div>
+          Rental time
+          <label class="sbs"><input type="radio" name="danger" value="halfday" checked> Half-Day</label>
+          <label class="sbs"><input type="radio" name="danger" value="fullday"> Full-Day</label>
+        </div>
 
-      </datalist>
-    </label>
-    
-    <label class="top">Cruise Line
-      <select name="subject">
-        <option value="" disabled="" selected="">Select Region &#9662;</option>
-        <option value="preston">Preston</option>
-        <option value="soda-springs">Soda Springs</option>
-        <option value="fish-haven">Fish Haven</option>
-      </select>
-    </label>
-    <div>
-      Do you have a valid drivers liscense?
-      <label class="sbs"><input type="radio" name="danger" value="no"> No</label>
-      <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
-    </div>
-    <label class="top">Comments
-      <textarea name="comment" rows="5"></textarea></label>
-  </fieldset>
+        <label class="top">Rental type <input list="typeofstorm" name="stormtype">
+          <datalist id="typeofstorm">
+            <option value="Metro Scooter-Seats 1"></option>
+            <option value="Honda Dio Scooter-Seats 2"></option>
+            <option value="Honda PCX150 Scooter-Seats 2"></option>
+            <option value="Honda Pioneer ATV- Seats 4"></option>
+            <option value="2 Door Jeep Wrangler- Seats 4"></option>
+            <option value="4 Door Jeep Wrangler- Seats 5"></option>
 
+          </datalist>
+        </label>
+        <div>
+          Do you have a valid drivers liscense?
+          <label class="sbs"><input type="radio" name="danger" value="no" checked> No</label>
+          <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
+        </div>
 
-  <input type="submit" value="Report My Storm" class="submitBtn">
-
-</form>
-<div class="info">
-<h3>Information and Services</h3>
-<ul>
-  <li>A $50 security deposit is required to confirm reservations.</li>
-  <li>A valid drivers license is required in hand at time of rental.</li>
-  <li>No one under 12 years of age are allowed to ride on the scooters.</li>
-  <li>Fuel charge not included.</li>
-  <li>Unlimited mileage.</li>
-  <li>Liability insurance is free of charge.</li>
-  <li>Reservations rate requires 24 hour prior notification.</li>
-  <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
-  <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
-  <li>Rentals may be returned to either location.</li>
-  <li>Helmets included with rental</li>
-</ul>
-</div>
-<footer>
-  <h2 class="cursive">Scoots</h2>
-  <div class="contact">
-    <div class="contact1">
-      <h3>Playa del Carmen Location</h3>
-      <div class="contactItem address">
-        <img src="images/location32.png" alt="location marker" />
-        <p>Av. Rafael E. Melgar, Centro, 77600 <br>San Miguel de Cozumel, Q.R., Mexico
-      </div>
-      <div class="contactItem phone">
-        <img src="images/phone32.png" alt="mobile phone icon" />
-        <p>+52 987 878 4391</p>
-      </div>
+      </fieldset>
+      <fieldset>
+        <legend>Drop-off Information</legend>
+        <div>
+          Would you like your rental dropped off?
+          <label class="sbs"><input type="radio" name="danger" value="no" checked> No</label>
+          <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
+        </div>
+        <div>
+          If you answered yes, where would you like it dropped off?
+          <label class="sbs"><input type="radio" name="danger" value="address" checked> Address</label>
+          <label class="sbs"><input type="radio" name="danger" value="cruiseline"> Cruise-line</label>
+        </div>
+        <label class="top" for="adr">Address for drop-off <input type="text" id="adr" name="address"
+            placeholder="123 Lalaland"></label>
+        <label class="top">Cruise Line for drop-off
+          <select name="subject">
+            <option value="" disabled="" selected="">Select Cruise Line &#9662;</option>
+            <option value="carnival-cruises">Carnival Cruises</option>
+            <option value="celebrity-cruises">Celebrity Cruises</option>
+            <option value="crystal-cruises">Crystal Cruises</option>
+            <option value="disney-cruises">Disney Cruises</option>
+            <option value="holland-america">Holland America</option>
+            <option value="norwegian-cruises">Norwegian Cruises</option>
+            <option value="princess-cruises">Princess Cruises</option>
+            <option value="regent seven seas ">Regent Seven Seas </option>
+          </select>
+        </label>
+        <label class="top">Special Instructions/Comments
+          <textarea name="comment" rows="5"></textarea></label>
+      </fieldset>
+      <fieldset>
+        <legend>Payment</legend>
+        <label class="top" for="cname">Name on Card<input type="text" id="cname" name="cardname"
+            placeholder="Jane Mary Doe" required></label>
+        <label class="top" for="ccnum">Credit card number<input type="text" id="ccnum" name="cardnumber"
+            placeholder="1234-1234-1234-1234" required></label>
+        <label class="top" for="expmo">Exp Month<input type="text" id="expmo" name="expmo" placeholder="December"
+            required></label>
+        <label class="top" for="expireyear">Exp Year<input type="text" id="expireyear" name="expireyear"
+            placeholder="2025" required></label>
+        <label class="top" for="cvv">CVV<input type="text" id="cvv" name="cvv" placeholder="123" required></label>
+    </form>
     </div>
-    <div class="contact1">
-      <h3>Puerta Maya Location</h3>
-      <div class="contactItem address">
-        <img src="images/location32.png" alt="location marker" />
-        <p>Carretera Costera Sur, 77600 <br>San Miguel de Cozumel, Q.R., Mexico
+    </div>
+    <input type="submit" value="Make my reservation" class="submitBtn">
+  </form>
+    <div class="info">
+      <h3>Information and Services</h3>
+      <ul>
+        <li>A $50 security deposit is required to confirm reservations.</li>
+        <li>A valid drivers license is required in hand at time of rental.</li>
+        <li>No one under 12 years of age are allowed to ride on the scooters.</li>
+        <li>Fuel charge not included.</li>
+        <li>Unlimited mileage.</li>
+        <li>Liability insurance is free of charge.</li>
+        <li>Reservations rate requires 24 hour prior notification.</li>
+        <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+        <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+        <li>Rentals may be returned to either location.</li>
+        <li>Helmets included with rental</li>
+      </ul>
+    </div>
+    </main>
+    <footer>
+      <h2 class="cursive">Scoots</h2>
+      <div class="contact">
+        <div class="contact1">
+          <h3>Playa del Carmen Location</h3>
+          <div class="contactItem address">
+            <img src="images/location32.png" alt="location marker" />
+            <p>Av. Rafael E. Melgar, Centro, 77600 <br>San Miguel de Cozumel, Q.R., Mexico
+          </div>
+          <div class="contactItem phone">
+            <img src="images/phone32.png" alt="mobile phone icon" />
+            <p>+52 987 878 4391</p>
+          </div>
+        </div>
+        <div class="contact1">
+          <h3>Puerta Maya Location</h3>
+          <div class="contactItem address">
+            <img src="images/location32.png" alt="location marker" />
+            <p>Carretera Costera Sur, 77600 <br>San Miguel de Cozumel, Q.R., Mexico
+          </div>
+          <div class="contactItem phone">
+            <img src="images/phone32.png" alt="mobile phone icon" />
+            <p>+52 987 869 1984</p>
+          </div>
+        </div>
+        <div class="contactItem email">
+          <img src="images/email32.png" alt="email icon" />
+          <p>miguel@scootscozumel.com</p>
+        </div>
+        <div class="social">
+          <a target="_blank" rel="noreferrer" href="https://www.facebook.com/"><img src="images/facebook32.png"
+              alt="facebook icon" /></a>
+          <a target="_blank" rel="noreferrer" href="https://www.pinterest.com/"><img src="images/pinterest32.png"
+              alt="pinterest icon" /></a>
+          <a target="_blank" rel="noreferrer" href="https://twitter.com//"><img src="images/twitter32.png"
+              alt="twitter icon" /></a>
+          <a target="_blank" rel="noreferrer" href="https://www.instagram.com/"><img src="images/instagram32.png"
+              alt="instagram icon" /></a>
+        </div>
       </div>
-      <div class="contactItem phone">
-        <img src="images/phone32.png" alt="mobile phone icon" />
-        <p>+52 987 869 1984</p>
-      </div>
-    </div>
-    <div class="contactItem email">
-      <img src="images/email32.png" alt="email icon" />
-      <p>miguel@scootscozumel.com</p>
-    </div>
-    <div class="social">
-      <a target="_blank" rel="noreferrer" href="https://www.facebook.com/"><img src="images/facebook32.png"
-          alt="facebook icon" /></a>
-      <a target="_blank" rel="noreferrer" href="https://www.pinterest.com/"><img src="images/pinterest32.png"
-          alt="pinterest icon" /></a>
-      <a target="_blank" rel="noreferrer" href="https://twitter.com//"><img src="images/twitter32.png"
-          alt="twitter icon" /></a>
-      <a target="_blank" rel="noreferrer" href="https://www.instagram.com/"><img src="images/instagram32.png"
-          alt="instagram icon" /></a>
-    </div>
-  </div>
-  <p>
-    &copy;<span id="current-date"></span>
-  </p>
-  <p>
-    <small>Last Updated:<span id="last-updated"></span> </small>
-  </p>
-</footer>
-<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-<script src="js/common.js"></script>
-<script src="js/rental.js"></script>
+      <p>
+        &copy;<span id="current-date"></span>
+      </p>
+      <p>
+        <small>Last Updated:<span id="last-updated"></span> </small>
+      </p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/rental.js"></script>
 </body>
 
 </html>
