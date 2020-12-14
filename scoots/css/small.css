@@ -79,7 +79,7 @@ header h1 {
 
 h2 {
   font-size: 1.5rem;
-  line-height:1.5rem;
+  line-height: 1.5rem;
   margin: 20px 10px;
   padding: 0;
   text-align: center;
@@ -92,8 +92,9 @@ h2.emphasized {
   font-size: 1.5rem;
   line-height: 2.5rem;
   border-bottom: 4px solid #FB8500;
-  
+
 }
+
 a {
   text-decoration: none;
   color: #023047;
@@ -115,11 +116,12 @@ a {
   border-radius: 5px;
   border: none;
 }
+
 .moreinfo {
   border: 1px solid #023047;
   padding: 8px 15px;
   border-radius: 5px;
-} 
+}
 
 .calltoaction {
   position: absolute;
@@ -322,10 +324,12 @@ footer h2.cursive {
   margin: 15px 1px 10px 0;
   width: 30px;
 }
+
 .info {
-margin: 20px;
-padding-bottom: 20px;
+  margin: 20px;
+  padding-bottom: 20px;
 }
+
 .back {
   margin: 20px 0 0 20px;
   display: inline-block;
@@ -336,23 +340,64 @@ padding-bottom: 20px;
   border-radius: 5px;
   border: none;
 }
+
 .specHero {
   max-width: 320px;
   width: 100%;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
+
 .specHero img {
   width: 100%;
 }
+.pricing table,
+.pricing th,
+.pricing td {
+  border: 1px solid #023047;
+  padding: 2px 4px;
+}
+
+.pricing {
+  border-collapse: collapse;
+  border-style: hidden;
+  box-shadow: 0 0 0 1px #023047;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.pricing th {
+  background-color: #024059;
+  border-top: none;
+  color: white;
+}
+
+th:first-of-type {
+  border-top-left-radius: 4px;
+}
+
+th:last-of-type {
+  border-top-right-radius: 4px;
+}
+
+tr:last-of-type td:first-of-type {
+  border-bottom-left-radius: 4px;
+}
+
+tr:last-of-type td:last-of-type {
+  border-bottom-right-radius: 4px;
+}
+
 form fieldset {
   margin: 3rem 0;
   border: 1px solid transparent;
-  background-color: #CEE3EB;
+  background-color: rgba(142, 202, 230, .8);
   border-radius: 10px;
 }
 
 form legend {
-  color: #024059;
+  color: #023047;
   position: relative;
   top: -1rem;
   font-weight: bold;
@@ -362,7 +407,7 @@ form label.top,
 form div {
   display: block;
   margin-bottom: 20px;
-  color: #024059;
+  color: #023047;
   font-size: 1rem;
 }
 
@@ -372,10 +417,10 @@ form label.top textarea {
   -webkit-appearance: none;
   display: block;
   font-size: 1rem;
-  border: 1px solid #011C26;
+  border: 1px solid #023047;
   border-radius: 4px;
   padding: .75rem;
-  color: #011C26;
+  color: #023047;
   box-sizing: border-box;
   width: 100%;
 }
@@ -383,13 +428,13 @@ form label.top textarea {
 form label.sbs {
   display: block;
   padding: .1rem 0;
-  color: #011C26;
+  color: #023047;
 }
 
 form input.submitBtn {
   display: block;
   border: none;
-  background-color: #024059;
+  background-color: #023047;
   color: white;
   border-radius: 1rem;
   padding: .75rem 1.5rem;
@@ -399,11 +444,11 @@ form input.submitBtn {
 }
 
 form label.top input:required {
-  border-left: #d9734e solid 6px;
+  border-left: #FB8500 solid 6px;
 }
 
 form label.top input:required:valid {
-  border-left: 6px solid #77bdd9;
+  border-left: 6px solid #8ECAE6;
 }
 
 form label.stormrating input {
@@ -417,3 +462,4 @@ form {
   margin: 0 auto;
   max-width: 320px;
 }
+
