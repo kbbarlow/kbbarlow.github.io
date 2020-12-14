@@ -67,6 +67,9 @@
   .rentals p {
     font-size: 1rem;
   }
+  .tablecloth {
+    padding:0 15px;
+  }
 
   .weather {
     background: url(../images/sunnyocean600.jpg) center/cover no-repeat;
