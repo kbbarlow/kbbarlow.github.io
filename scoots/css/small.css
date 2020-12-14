@@ -350,6 +350,7 @@ footer h2.cursive {
 .specHero img {
   width: 100%;
 }
+
 .pricing table,
 .pricing th,
 .pricing td {
@@ -405,7 +406,8 @@ form legend {
 
 form label.top,
 form div {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 20px;
   color: #023047;
   font-size: 1rem;
@@ -415,7 +417,8 @@ form label.top input,
 form label.top select,
 form label.top textarea {
   -webkit-appearance: none;
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   font-size: 1rem;
   border: 1px solid #023047;
   border-radius: 4px;
@@ -426,13 +429,15 @@ form label.top textarea {
 }
 
 form label.sbs {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   padding: .1rem 0;
   color: #023047;
 }
 
 form input.submitBtn {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   border: none;
   background-color: #023047;
   color: white;
@@ -451,15 +456,77 @@ form label.top input:required:valid {
   border-left: 6px solid #8ECAE6;
 }
 
-form label.stormrating input {
-  display: block;
-  padding: 0;
-  width: 100%;
-  margin-bottom: 20px;
-}
-
 form {
   margin: 0 auto;
-  max-width: 320px;
+  max-width: 400px;
+  width:100%;
 }
 
+.scoot {
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  animation: slide-in-blurred-right 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+  /* animation-name: 
+    slide-in-blurred-right, 
+    slide-out-blurred-left;
+  animation-duration: .5s, .5s;
+  animation-timing-function: 
+    cubic-bezier(0.230, 1.000, 0.320, 1.000),
+    cubic-bezier(0.755, 0.050, 0.855, 0.060);
+  animation-delay: 0s, 2s; */
+}
+
+.thankYouText1, .thankYouText2, .thankYouText3 {
+  animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.5s both;
+  text-align: center;
+}
+.thankYouText2 {
+  animation-delay: .6s;
+}
+.thankYouText3 {
+  animation-delay: .7s;
+}
+
+/* Animations */
+
+ @-webkit-keyframes slide-in-blurred-right {
+  0% {
+    transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+    transform-origin: 0% 50%;
+    filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) scaleY(1) scaleX(1);
+    transform-origin: 50% 50%;
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+ @-webkit-keyframes slide-out-blurred-left {
+  0% {
+    transform: translateX(0) scaleY(1) scaleX(1);
+    transform-origin: 50% 50%;
+    filter: blur(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-1000px) scaleX(2) scaleY(0.2);
+    transform-origin: 100% 50%;
+    filter: blur(40px);
+    opacity: 0;
+  }
+}
+
+ @-webkit-keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
