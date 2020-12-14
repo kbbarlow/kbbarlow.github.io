@@ -427,12 +427,22 @@ form label.top textarea {
   box-sizing: border-box;
   width: 100%;
 }
-
+.radio {
+  flex-direction: column;
+  margin: 0;
+}
+.radio p{
+  margin: 0;
+}
 form label.sbs {
   display: flex;
-  flex-wrap: wrap;
-  padding: .1rem 0;
+  align-items: center;
   color: #023047;
+  padding-right: 10px;
+  margin-bottom: 0;
+}
+input[type="radio"] {
+  margin-right: 2px
 }
 
 form input.submitBtn {
@@ -445,7 +455,6 @@ form input.submitBtn {
   padding: .75rem 1.5rem;
   width: 200px;
   margin: 0 auto;
-
 }
 
 form label.top input:required {
@@ -458,7 +467,7 @@ form label.top input:required:valid {
 
 form {
   margin: 0 auto;
-  max-width: 400px;
+  max-width: 320px;
   width:100%;
 }
 
