@@ -81,8 +81,8 @@
         <div class="radio">
           <p>Do you have a valid drivers liscense?</p>
           <div>
-          <label class="sbs"><input type="radio" name="danger" value="no" checked> No</label>
-          <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
+          <label class="sbs"><input type="radio" name="license" value="no" checked> No</label>
+          <label class="sbs"><input type="radio" name="license" value="yes" checked> Yes</label>
         </div>
         </div>
 
@@ -92,17 +92,20 @@
         <div class="radio">
           <p>Would you like your rental dropped off?</p>
           <div>
-          <label class="sbs"><input type="radio" name="danger" value="no" checked> No</label>
-          <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
+          <label class="sbs"><input type="radio" name="drop-off" value="no" checked> No</label>
+          <label class="sbs"><input type="radio" name="drop-off" value="yes" checked> Yes</label>
           </div>
         </div>
         <div class="radio">
           <p>If you answered yes, where would you like it dropped off?</p>
           <div>
-          <label class="sbs"><input type="radio" name="danger" value="address" checked> Address</label>
-          <label class="sbs"><input type="radio" name="danger" value="cruiseline"> Cruise-line</label>
+          <label class="sbs"><input type="radio" name="locationdrop" value="address" checked> Address</label>
+          <label class="sbs"><input type="radio" name="locationdrop" value="cruiseline"> Cruise-line</label>
+          <label class="sbs"><input type="radio" name="locationdrop" value="hotel"> Hotel</label>
         </div>
         </div>
+        <label class="top" for="hotel">Hotel Name <input type="text" id="hotel" name="hotel"
+          placeholder="Hilton Playa del Carmen"></label>
         <label class="top" for="adr">Address for drop-off <input type="text" id="adr" name="address"
             placeholder="123 Lalaland"></label>
         <label class="top">Cruise Line for drop-off
@@ -118,6 +121,8 @@
             <option value="regent seven seas ">Regent Seven Seas </option>
           </select>
         </label>
+        <label class="top" for="ship">Cruise Ship's Name <input type="text" id="ship" name="ship"
+          placeholder="Carnival Pride"></label>
         <label class="top">Special Instructions/Comments
           <textarea name="comment" rows="5"></textarea></label>
       </fieldset>
