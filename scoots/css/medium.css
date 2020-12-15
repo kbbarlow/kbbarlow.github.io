@@ -151,4 +151,11 @@
   .specHero {
     max-width: 600px;
   }
+  .embededmap {
+    max-width: 768px;
+    text-align: center;
+  }
+  .embededmap iframe{
+    height: 600px;
+  }
 }
