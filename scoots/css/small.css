@@ -116,6 +116,15 @@ a {
   border-radius: 5px;
   border: none;
 }
+.thanks {
+  text-align: center;
+  width: 100%;
+}
+.thankYou {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 300px;
+}
 
 .moreinfo {
   border: 1px solid #023047;
@@ -457,6 +466,9 @@ form input.submitBtn {
   width: 200px;
   margin: 0 auto;
 }
+form input[value="Ask Scoots"] { 
+justify-content:center;
+ }​
 
 form label.top input:required {
   border-left: #FB8500 solid 6px;
@@ -471,9 +483,7 @@ form {
   max-width: 320px;
   width:100%;
 }
-.thankYou .button{
-  margin: 0 auto;
-}
+
 
 .scoot {
   display: block;
