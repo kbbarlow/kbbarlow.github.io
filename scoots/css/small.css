@@ -583,7 +583,7 @@ form {
 display: flex;
 align-items:center;
 }
-.expheader .pill{
+.expheader .pill, .expheader .pill2 {
   margin-left: 10px;
   }
 .experiences {
@@ -599,6 +599,15 @@ margin: 0 20px;
 .pill {
   background-color: #219ebc;
   color: #ffffff;
+  width: 64px;
+  padding:3px;
+  text-align: center;
+  border-radius: 16px;
+  font-size: 12px;
+}
+.pill2 {
+  background-color: #FFB703;
+  color: #023047;
   width: 64px;
   padding:3px;
   text-align: center;
