@@ -123,4 +123,7 @@
   h2.tours {
     margin-top: 20px;
   }
+  .headsup {
+    margin-top: 0;
+  }
 }
