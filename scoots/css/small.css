@@ -525,20 +525,21 @@ form {
 }
 .cozumelmap {
   width: 100%;
-  max-width: 320px;
+  max-width: 600px;
   margin: 0 auto;
 }
 .cozumelmap img{
   width: 100%;
-  max-width: 320px;
+  max-width: 600px;
 }
 .recommended {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: #ffffff;
-  max-width: 320px;
+  max-width: 600px;
   border-radius: 8px;
   box-shadow: 0 5px 15px rgba(2, 48, 71, 0.3);
+  overflow: hidden;
 
 }
 .recommended img {
@@ -556,16 +557,13 @@ form {
 .expimg {
   display: flex;
   max-width: 600px;
-  width: 100%;
   padding: 10px;
   margin: 0 auto;
 }
 .expimg img {
   width: 100%;
-  max-width: 300px;
 }
 .experiences {
-width: 100%;
 max-width: 600px;
 margin: 0 auto;
 }
@@ -574,6 +572,15 @@ margin: 0 auto;
   max-width: 600px;
   margin: 0 auto;
   height: 382px;
+}
+.pill {
+  background-color: #219ebc;
+  color: #ffffff;
+  width: 64px;
+  padding:3px;
+  text-align: center;
+  border-radius: 16px;
+  font-size: 12px;
 }
 
 
