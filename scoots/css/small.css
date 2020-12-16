@@ -116,10 +116,12 @@ a {
   border-radius: 5px;
   border: none;
 }
+
 .thanks {
   text-align: center;
   width: 100%;
 }
+
 .thankYou {
   width: 100%;
   margin: 0 auto;
@@ -437,13 +439,16 @@ form label.top textarea {
   box-sizing: border-box;
   width: 100%;
 }
+
 .radio {
   flex-direction: column;
   margin: 0;
 }
-.radio p{
+
+.radio p {
   margin: 0;
 }
+
 form label.sbs {
   display: flex;
   align-items: center;
@@ -451,8 +456,9 @@ form label.sbs {
   padding-right: 10px;
   margin-bottom: 0;
 }
+
 input[type="radio"] {
-  margin-right: 2px
+  margin-right: 2px;
 }
 
 form input.submitBtn {
@@ -466,12 +472,13 @@ form input.submitBtn {
   width: 200px;
   margin: 0 auto;
 }
-form input[value="Ask Scoots"] { 
-justify-content:center;
- }​
+
+form input[value="Ask Scoots"] {
+  justify-content: center;
+}
 
 form label.top input:required {
-  border-left: #FB8500 solid 6px;
+  border-left: 6px solid #FB8500;
 }
 
 form label.top input:required:valid {
@@ -481,7 +488,7 @@ form label.top input:required:valid {
 form {
   margin: 0 auto;
   max-width: 320px;
-  width:100%;
+  width: 100%;
 }
 
 
@@ -492,21 +499,27 @@ form {
   animation: slide-in-blurred-right 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 }
 
-.thankYouText1, .thankYouText2, .thankYouText3 {
+.thankYouText1,
+.thankYouText2,
+.thankYouText3 {
   animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.5s both;
   text-align: center;
 }
+
 .thankYouText2 {
   animation-delay: .6s;
 }
+
 .thankYouText3 {
   animation-delay: .7s;
 }
+
 .embededmap {
   margin: 0 auto;
   max-width: 320px;
 }
-.embededmap iframe{
+
+.embededmap iframe {
   width: 100%;
   height: 320px;
 }
@@ -514,13 +527,14 @@ form {
 
 /* Animations */
 
- @-webkit-keyframes slide-in-blurred-right {
+@-webkit-keyframes slide-in-blurred-right {
   0% {
     transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
     transform-origin: 0% 50%;
     filter: blur(40px);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0) scaleY(1) scaleX(1);
     transform-origin: 50% 50%;
@@ -529,13 +543,14 @@ form {
   }
 }
 
- @-webkit-keyframes slide-out-blurred-left {
+@-webkit-keyframes slide-out-blurred-left {
   0% {
     transform: translateX(0) scaleY(1) scaleX(1);
     transform-origin: 50% 50%;
     filter: blur(0);
     opacity: 1;
   }
+
   100% {
     transform: translateX(-1000px) scaleX(2) scaleY(0.2);
     transform-origin: 100% 50%;
@@ -544,14 +559,15 @@ form {
   }
 }
 
- @-webkit-keyframes text-focus-in {
+@-webkit-keyframes text-focus-in {
   0% {
     filter: blur(12px);
     opacity: 0;
   }
+
   100% {
     filter: blur(0px);
     opacity: 1;
   }
-  
+
 }
