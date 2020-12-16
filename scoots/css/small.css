@@ -100,6 +100,14 @@ a {
   color: #023047;
 }
 
+a img {
+  border: none;
+}
+
+img {
+  object-fit: cover;
+}
+
 .weatheralert {
   background-color: #219EBC;
   font-size: .8rem;
@@ -545,7 +553,7 @@ form {
   overflow: hidden;
 }
 .recommended img {
-  max-width: 300px;
+  max-width: 200px;
   border-radius: 8px;
 }
 .recommended .highlight {
