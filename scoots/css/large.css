@@ -120,4 +120,7 @@
   .rectext h3{
     margin:0;
   }
+  h2.tours {
+    margin-top: 20px;
+  }
 }
