@@ -161,4 +161,11 @@
   .embededmap iframe{
     height: 600px;
   }
+  .cozumelmap {
+    max-width: 600px;
+  }
+  .cozumelmap img{
+    max-width: 600px;
+  }
+   
 }

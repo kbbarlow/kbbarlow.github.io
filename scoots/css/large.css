@@ -36,4 +36,20 @@
   .rentals img {
     width: 100%;
   }
+  .cozumelmap {
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .about {
+    grid-column: 2;
+    margin:0 0 0 20px;
+    padding:0;
+    font-size: 13px;
+  }
+  .about h3{
+    margin: 0;
+  }
+
 }
