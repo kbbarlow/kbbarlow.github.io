@@ -526,23 +526,25 @@ form {
 .cozumelmap {
   width: 100%;
   max-width: 600px;
-  margin: 20px auto;
+  margin: 0 auto;
+}
+.about {
+  margin: 0 20px;
 }
 .cozumelmap img{
   width: 100%;
   max-width: 600px;
 }
 .recommended {
-  display: grid;
   background-color: #ffffff;
   max-width: 600px;
   border-radius: 8px;
   box-shadow: 0 5px 15px rgba(2, 48, 71, 0.3);
-  
-
+  text-align: center;
+  padding:20px;
+  overflow: hidden;
 }
 .recommended img {
-  grid-column: 1;
   max-width: 300px;
   border-radius: 8px;
 }
@@ -553,19 +555,32 @@ form {
   padding: 0px
 }
 .expimg {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   max-width: 600px;
-  width: 100%;
-  margin: 10px auto;
+  margin: 20px 0;
+  column-gap: 10px;
 }
-.expimg img {
+.expimg img:nth-child(1) {
   width: 100%;
   max-width: 300px;
+  grid-column: 1;
 }
+.expimg img:nth-child(2) {
+  width: 100%;
+  max-width: 300px;
+  grid-column: 2;
+}
+.expheader {
+display: flex;
+align-items:center;
+}
+.expheader .pill{
+  margin-left: 10px;
+  }
 .experiences {
 max-width: 600px;
-margin: 0 auto;
-padding: 10px;
+margin: 0 20px;
 }
 .experiences iframe {
   width: 100%;

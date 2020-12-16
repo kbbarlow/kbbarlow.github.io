@@ -162,10 +162,50 @@
     height: 600px;
   }
   .cozumelmap {
+    width: 100%;
     max-width: 600px;
+    margin: 0 auto;
+  }
+  .about {
+    margin: 0 20px;
   }
   .cozumelmap img{
+    width: 100%;
     max-width: 600px;
   }
+  .recommended {
+    display: flex;
+  }
+  .recommended .highlight {
+    grid-column: 2;
+    color: #219ebc;
+    font-size: 16px;
+    padding: 0px
+  }
+  .expimg {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 600px;
+    margin: 20px 0;
+  }
+  .expimg img:nth-child(1) {
+    width: 100%;
+    max-width: 300px;
+    grid-column: 1;
+  }
+  .expimg img:nth-child(2) {
+    width: 100%;
+    max-width: 300px;
+    grid-column: 2;
+  }
+  .expheader .pill{
+    margin-left: 10px;
+    }
+  .experiences {
+  max-width: 600px;
+  margin: 0 auto;
+  }
+  
+  
    
 }
