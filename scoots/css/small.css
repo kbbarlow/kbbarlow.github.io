@@ -532,6 +532,50 @@ form {
   width: 100%;
   max-width: 320px;
 }
+.recommended {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #ffffff;
+  max-width: 320px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(2, 48, 71, 0.3);
+
+}
+.recommended img {
+  grid-column: 1/2;
+}
+.recommended .highlight {
+  grid-column: 2;
+  color: #219ebc;
+  font-size: 16px;
+  padding: 0px
+}
+.rectext {
+  margin-bottom: 10px;
+}
+.expimg {
+  display: flex;
+  max-width: 600px;
+  width: 100%;
+  padding: 10px;
+  margin: 0 auto;
+}
+.expimg img {
+  width: 100%;
+  max-width: 300px;
+}
+.experiences {
+width: 100%;
+max-width: 600px;
+margin: 0 auto;
+}
+.experiences iframe {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  height: 382px;
+}
+
 
 
 /* Animations */
