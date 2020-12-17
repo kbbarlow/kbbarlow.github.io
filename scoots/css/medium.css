@@ -30,6 +30,9 @@
   header {
     max-width: 225px;
   }
+  .logo {
+    max-width: 250px;
+  }
 
   .subhead {
     font-size: .8rem;

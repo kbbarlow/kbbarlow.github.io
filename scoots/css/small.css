@@ -58,23 +58,33 @@ nav ul.hide {
   display: none;
 }
 
-h1 {
+/* h1 {
   font-family: 'Sonsie One', cursive;
   font-size: 2rem;
   line-height: 1.5rem;
   padding: 0 10px;
   margin: 0;
   border-bottom: 4px solid #FB8500;
-}
+} */
 
 header h1 {
   line-height: 3.5rem;
+}
+.logo {
+  max-width: 200px;
+  margin-top: 10px;
 }
 
 .subhead {
   margin: 0;
   font-size: .75rem;
   padding: 5px 10px;
+}
+h1 {
+  line-height: 1.5rem;
+  margin: 20px 10px;
+  padding: 0;
+  text-align: center;
 }
 
 h2 {
