@@ -634,6 +634,13 @@ margin: 0 20px;
 .headsup {
   margin-top: 40px;
 }
+.atts {
+  max-width: 320px;
+  margin: 0 auto;
+}
+.atts a {
+  color: #FB8500 !important;
+}
 
 
 
