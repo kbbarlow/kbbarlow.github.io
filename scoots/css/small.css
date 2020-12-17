@@ -109,15 +109,15 @@ img {
 }
 
 .weatheralert {
-  background-color: #219EBC;
-  color: #fff;
+  background-color: #FFB703;
+  color: #023047;
   padding: 20px;
   display: none;
   text-align: left;
 }
 .closbtn {
   margin-left: 15px;
-  color: white;
+  color: #023047;
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
