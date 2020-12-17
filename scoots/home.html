@@ -16,11 +16,13 @@
 
 <body>
   <div class="weatheralert">
-    <p>Weather alert: <span id="alert"></span><span id="alertdesc"></span></p>
+    <span id="alert"></span>
+    <span id="alertdesc"></span>
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
   </div>
   <header>
-      <h1>Scoots</h1>
-      <p class="subhead">Where your next adventure begins</p>
+    <h1>Scoots</h1>
+    <p class="subhead">Where your next adventure begins</p>
   </header>
   <main>
     <nav class="clearfix">
@@ -87,9 +89,8 @@
     <section class="weather">
       <div class="weathersummary">
         <h2>Today's Weather</h2>
-        <img id="icon"
-              src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
-              alt="unknown">
+        <img id="icon" src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
+          alt="unknown">
         <p>Currently: <span id="weather"></span> </p>
         <p>Current Temp: <span id="current-temp"></span></p>
         <p>Feels Like: <span id="feels_like"></span></p>
@@ -120,7 +121,7 @@
       </div>
     </section>
     <section class="location">
-    <h2>Two Locations open 8am to 6pm daily</h2>
+      <h2>Two Locations open 8am to 6pm daily</h2>
       <div class="location1">
         <img src="images/storefront1.jpg" alt="scoots store 1 storefront" />
         <img src="images/playa-del-carmen.png" alt="scoots store 2 storefront" />
@@ -181,5 +182,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <script src="js/common.js"></script>
   <script src="js/weather.js"></script>
+  <script src="js/alert.js"></script>
 </body>
+
 </html>

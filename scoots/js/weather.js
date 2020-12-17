@@ -2,7 +2,6 @@ const APIurl ='https://api.openweathermap.org/data/2.5/onecall?lat=20.422984&lon
 fetch(APIurl)
 .then((response) => response.json())
 .then((jsObject) => {
-  console.log(jsObject);
   const descipt = jsObject.current.weather[0].description;
   const image ='https://openweathermap.org/img/wn/' + jsObject.current.weather[0].icon + '@2x.png';
   document.getElementById('icon').setAttribute('alt', descipt);
@@ -22,6 +21,11 @@ fetch(APIurl)
     document.getElementById(`icon${day+1}`).setAttribute('src', imagesrc);
     document.getElementById(`icon${day+1}`).setAttribute('alt', desc);
   }
-  document.getElementById('alert').innerHTML = jsObject.alerts.event;
-  document.getElementById('alertdesc').innerHTML = jsObject.alerts.description;
+  // if (jsObject.hasOwnProperty('alerts')) {
+  //   document.querySelector('.weatheralert').style.display = 'block';
+  //   document.getElementById('alert').innerHTML = jsObject.alerts[0].event;
+  //   document.getElementById('alertdesc').innerHTML = jsObject.alerts[0].description;
+  // } else {
+  //   document.querySelector('.weatheralert').style.display = 'none';
+  // }
 });
