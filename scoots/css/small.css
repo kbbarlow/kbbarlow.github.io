@@ -111,19 +111,22 @@ img {
 .weatheralert {
   background-color: #FFB703;
   color: #023047;
-  padding: 20px;
+  padding: 20px 60px 20px 20px;
   display: none;
   text-align: left;
   font-weight: bold;
+  position: relative;
 }
-.closbtn {
-  margin-left: 15px;
+.closebtn {
   color: #023047;
   font-weight: bold;
+  font-size: 30px;
   cursor: pointer;
   transition: 0.3s;
-  float: right;
   position: absolute;
+  top: 8px;
+  right: 25px;
+  text-align: right;
 }
 .closebtn:hover {
   color: #023047;
