@@ -114,6 +114,7 @@ img {
   padding: 20px;
   display: none;
   text-align: left;
+  font-weight: bold;
 }
 .closbtn {
   margin-left: 15px;
@@ -122,6 +123,7 @@ img {
   cursor: pointer;
   transition: 0.3s;
   float: right;
+  position: absolute;
 }
 .closebtn:hover {
   color: #023047;
